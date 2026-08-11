@@ -1,0 +1,32 @@
+{
+  "giornata": 1,
+  "data": "YYYY-MM-DD",
+  "modalita": "Classic",
+  "avversario": "NOME AVVERSARIO",
+  "modulo": "4-3-3",
+  "_modulo_validi": "3-4-3 | 3-5-2 | 4-3-3 | 4-4-2 | 4-5-1 | 5-3-2 | 5-4-1",
+  "titolari": [
+    { "id": "p_01",  "nome": "NOME COGNOME", "ruolo_schierato": "P" },
+    { "id": "d_01",  "nome": "NOME COGNOME", "ruolo_schierato": "D" },
+    { "id": "d_02",  "nome": "NOME COGNOME", "ruolo_schierato": "D" },
+    { "id": "d_03",  "nome": "NOME COGNOME", "ruolo_schierato": "D" },
+    { "id": "d_04",  "nome": "NOME COGNOME", "ruolo_schierato": "D" },
+    { "id": "c_01",  "nome": "NOME COGNOME", "ruolo_schierato": "C" },
+    { "id": "c_02",  "nome": "NOME COGNOME", "ruolo_schierato": "C" },
+    { "id": "c_03",  "nome": "NOME COGNOME", "ruolo_schierato": "C" },
+    { "id": "a_01",  "nome": "NOME COGNOME", "ruolo_schierato": "A" },
+    { "id": "a_02",  "nome": "NOME COGNOME", "ruolo_schierato": "A" },
+    { "id": "a_03",  "nome": "NOME COGNOME", "ruolo_schierato": "A" }
+  ],
+  "panchina": [
+    {
+      "id": "p_02", "nome": "NOME COGNOME", "ruolo_classic": "P",
+      "ordine": 1,
+      "_nota_ordine": "CLASSIC: ordine standard P -> D -> C -> A"
+    },
+    { "id": "d_05", "nome": "NOME COGNOME", "ruolo_classic": "D", "ordine": 2 },
+    { "id": "d_06", "nome": "NOME COGNOME", "ruolo_classic": "D", "ordine": 3 },
+    { "id": "c_04", "nome": "NOME COGNOME", "ruolo_classic": "C", "ordine": 4 },
+    { "id": "a_04", "nome": "NOME COGNOME", "ruolo_classic": "A", "ordine": 5 }
+  ]
+}
