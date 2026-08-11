@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fantacalcio AI — Classic 2026-27</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #0f1117;
+    color: #e2e8f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ── Header ── */
+  header {
+    background: #1a1d2e;
+    border-bottom: 1px solid #2d3148;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  header h1 { font-size: 18px; font-weight: 700; color: #f8fafc; }
+  header span { font-size: 13px; color: #64748b; }
+  .badge {
+    margin-left: auto;
+    background: #1e3a5f;
+    color: #60a5fa;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+  }
+
+  /* ── Layout principale ── */
+  .main {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  /* ── Pannello Rosa (sinistra) ── */
+  .rosa-panel {
+    width: 300px;
+    background: #1a1d2e;
+    border-right: 1px solid #2d3148;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .rosa-header {
+    padding: 16px;
+    border-bottom: 1px solid #2d3148;
+  }
+
+  .budget-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #94a3b8;
+    margin-bottom: 6px;
+  }
+  .budget-bar-label strong { color: #f8fafc; font-size: 14px; }
+
+  .budget-bar {
+    height: 6px;
+    background: #2d3148;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .budget-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    border-radius: 3px;
+    transition: width 0.4s ease;
+  }
+
+  .slot-summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 6px;
+    margin-top: 12px;
+  }
+  .slot-box {
+    background: #0f1117;
+    border-radius: 8px;
+    padding: 8px 4px;
+    text-align: center;
+  }
+  .slot-box .role { font-size: 11px; color: #64748b; font-weight: 600; letter-spacing: 0.05em; }
+  .slot-box .count { font-size: 18px; font-weight: 700; margin-top: 2px; }
+  .slot-box.ok .count { color: #34d399; }
+  .slot-box.warn .count { color: #f59e0b; }
+  .slot-box.full .count { color: #94a3b8; }
+
+  .rosa-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+  }
+
+  .role-group { margin-bottom: 16px; }
+  .role-group h3 {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #64748b;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .role-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .player-card {
+    background: #0f1117;
+    border: 1px solid #2d3148;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+  }
+  .player-card .name { font-weight: 600; color: #f8fafc; }
+  .player-card .meta { font-size: 11px; color: #64748b; margin-top: 1px; }
+  .player-card .price {
+    font-size: 13px;
+    font-weight: 700;
+    color: #f59e0b;
+    margin-left: 8px;
+    white-space: nowrap;
+  }
+  .player-card .remove {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 0 0 0 8px;
+    line-height: 1;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .player-card .remove:hover { opacity: 1; }
+
+  .empty-slot {
+    border: 1px dashed #2d3148;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #334155;
+    text-align: center;
+  }
+
+  /* ── Form aggiunta giocatore ── */
+  .add-form {
+    padding: 12px;
+    border-top: 1px solid #2d3148;
+    background: #1a1d2e;
+  }
+  .add-form h4 { font-size: 11px; color: #64748b; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .add-form input, .add-form select {
+    width: 100%;
+    background: #0f1117;
+    border: 1px solid #2d3148;
+    border-radius: 6px;
+    color: #f8fafc;
+    font-size: 13px;
+    padding: 7px 10px;
+    margin-bottom: 6px;
+    outline: none;
+  }
+  .add-form input:focus, .add-form select:focus { border-color: #3b82f6; }
+  .add-form .row { display: flex; gap: 6px; }
+  .add-form .row input { margin-bottom: 0; }
+  .btn-add {
+    width: 100%;
+    margin-top: 8px;
+    background: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .btn-add:hover { background: #2563eb; }
+
+  /* ── Chat (destra) ── */
+  .chat-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .msg {
+    display: flex;
+    gap: 12px;
+    max-width: 780px;
+  }
+  .msg.user { align-self: flex-end; flex-direction: row-reverse; }
+
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .msg.assistant .avatar { background: #1e3a5f; }
+  .msg.user .avatar { background: #312e81; }
+
+  .bubble {
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 640px;
+    white-space: pre-wrap;
+  }
+  .msg.assistant .bubble {
+    background: #1a1d2e;
+    border: 1px solid #2d3148;
+    border-top-left-radius: 4px;
+  }
+  .msg.user .bubble {
+    background: #1e3a5f;
+    border-top-right-radius: 4px;
+  }
+
+  .typing .bubble {
+    color: #64748b;
+    font-style: italic;
+  }
+
+  /* ── Input chat ── */
+  .chat-input {
+    padding: 16px 24px;
+    border-top: 1px solid #2d3148;
+    background: #1a1d2e;
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+  .chat-input textarea {
+    flex: 1;
+    background: #0f1117;
+    border: 1px solid #2d3148;
+    border-radius: 10px;
+    color: #f8fafc;
+    font-size: 14px;
+    padding: 10px 14px;
+    resize: none;
+    min-height: 44px;
+    max-height: 120px;
+    outline: none;
+    font-family: inherit;
+    line-height: 1.5;
+  }
+  .chat-input textarea:focus { border-color: #3b82f6; }
+  .btn-send {
+    background: #3b82f6;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s;
+  }
+  .btn-send:hover { background: #2563eb; }
+  .btn-send:disabled { background: #334155; cursor: not-allowed; }
+
+  /* ── Suggerimenti rapidi ── */
+  .quick-btns {
+    display: flex;
+    gap: 8px;
+    padding: 0 24px 12px;
+    flex-wrap: wrap;
+  }
+  .quick-btn {
+    background: #1a1d2e;
+    border: 1px solid #2d3148;
+    border-radius: 20px;
+    color: #94a3b8;
+    font-size: 12px;
+    padding: 5px 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .quick-btn:hover { border-color: #3b82f6; color: #60a5fa; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #2d3148; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<header>
+  <span style="font-size:22px">⚽</span>
+  <h1>Fantacalcio AI</h1>
+  <span>Classic 2026-27</span>
+  <div class="badge" id="model-badge">qwen2.5:7b</div>
+</header>
+
+<div class="main">
+
+  <!-- ── PANNELLO ROSA ── -->
+  <div class="rosa-panel">
+    <div class="rosa-header">
+      <div class="budget-bar-label">
+        <span>Budget</span>
+        <strong id="budget-label">500 cr</strong>
+      </div>
+      <div class="budget-bar">
+        <div class="budget-bar-fill" id="budget-fill" style="width:0%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:11px;color:#64748b;margin-top:5px;">
+        <span>Speso: <span id="speso-label">0</span> cr</span>
+        <span>Rimasto: <span id="rimasto-label">500</span> cr</span>
+      </div>
+
+      <div class="slot-summary">
+        <div class="slot-box ok" id="slot-P">
+          <div class="role">P</div>
+          <div class="count" id="cnt-P">0/3</div>
+        </div>
+        <div class="slot-box ok" id="slot-D">
+          <div class="role">D</div>
+          <div class="count" id="cnt-D">0/8</div>
+        </div>
+        <div class="slot-box ok" id="slot-C">
+          <div class="role">C</div>
+          <div class="count" id="cnt-C">0/8</div>
+        </div>
+        <div class="slot-box ok" id="slot-A">
+          <div class="role">A</div>
+          <div class="count" id="cnt-A">0/6</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="rosa-list" id="rosa-list"></div>
+
+    <div class="add-form">
+      <h4>AGGIUNGI GIOCATORE</h4>
+      <input type="text" id="add-nome" placeholder="Nome (es. Maignan)">
+      <input type="text" id="add-squadra" placeholder="Squadra (es. Milan)">
+      <div class="row">
+        <select id="add-ruolo" style="flex:1">
+          <option value="P">P — Portiere</option>
+          <option value="D">D — Difensore</option>
+          <option value="C">C — Centrocampista</option>
+          <option value="A">A — Attaccante</option>
+        </select>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <input type="number" id="add-quota" placeholder="Quota" min="1" style="flex:1">
+        <input type="number" id="add-prezzo" placeholder="Pagato cr" min="1" style="flex:1">
+      </div>
+      <button class="btn-add" onclick="addPlayer()">+ Aggiungi</button>
+    </div>
+  </div>
+
+  <!-- ── CHAT ── -->
+  <div class="chat-panel">
+    <div class="messages" id="messages">
+      <div class="msg assistant">
+        <div class="avatar">⚽</div>
+        <div class="bubble">Ciao! Ho caricato il listone Classic 2026-27 completo con tutti i portieri, difensori, centrocampisti e attaccanti.<br><br>Aggiungi i giocatori che acquisti nel pannello a sinistra e io terrò sempre conto della tua situazione.<br><br>Come posso aiutarti?</div>
+      </div>
+    </div>
+
+    <div class="quick-btns">
+      <button class="quick-btn" onclick="quickSend('Prepara la mia strategia d\'asta')">Strategia d'asta</button>
+      <button class="quick-btn" onclick="quickSend('Chi tengo d\'occhio per il low cost?')">Low cost consigliati</button>
+      <button class="quick-btn" onclick="quickSend('Chi sono i portieri con quotazione tra 8 e 18?')">Portieri disponibili</button>
+      <button class="quick-btn" onclick="quickSend('Ho ancora ' + getRimasto() + ' crediti e questi slot liberi: ' + getSlotLiberi() + '. Cosa faccio?')">Cosa faccio ora?</button>
+    </div>
+
+    <div class="chat-input">
+      <textarea id="input" placeholder="Scrivi una domanda... (Invio per inviare)" rows="1"
+        onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+      <button class="btn-send" id="send-btn" onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Stato ────────────────────────────────────────────────────────────────────
+const BUDGET = 500;
+const SLOT_MAX = { P: 3, D: 8, C: 8, A: 6 };
+const ROLE_COLORS = { P: '#f59e0b', D: '#34d399', C: '#60a5fa', A: '#f87171' };
+
+let rosa = { budget: BUDGET, speso: 0, slot: SLOT_MAX, giocatori: [] };
+let history = [];
+let sending = false;
+
+// ── Rosa ─────────────────────────────────────────────────────────────────────
+function addPlayer() {
+  const nome = document.getElementById('add-nome').value.trim();
+  const squadra = document.getElementById('add-squadra').value.trim();
+  const ruolo = document.getElementById('add-ruolo').value;
+  const quota = parseInt(document.getElementById('add-quota').value) || 0;
+  const prezzo = parseInt(document.getElementById('add-prezzo').value) || 1;
+
+  if (!nome || !squadra) return alert('Inserisci nome e squadra.');
+
+  const count = rosa.giocatori.filter(g => g.ruolo === ruolo).length;
+  if (count >= SLOT_MAX[ruolo]) return alert(`Slot ${ruolo} pieni (max ${SLOT_MAX[ruolo]}).`);
+  if (prezzo > rosa.budget - rosa.speso) return alert('Budget insufficiente.');
+
+  rosa.giocatori.push({ nome, squadra, ruolo, quotazione: quota, prezzo_pagato: prezzo });
+  rosa.speso += prezzo;
+
+  document.getElementById('add-nome').value = '';
+  document.getElementById('add-squadra').value = '';
+  document.getElementById('add-quota').value = '';
+  document.getElementById('add-prezzo').value = '';
+
+  renderRosa();
+}
+
+function removePlayer(idx) {
+  rosa.speso -= rosa.giocatori[idx].prezzo_pagato;
+  rosa.giocatori.splice(idx, 1);
+  renderRosa();
+}
+
+function renderRosa() {
+  const rimasto = BUDGET - rosa.speso;
+  const pct = Math.min(100, (rosa.speso / BUDGET) * 100);
+  document.getElementById('budget-fill').style.width = pct + '%';
+  document.getElementById('speso-label').textContent = rosa.speso;
+  document.getElementById('rimasto-label').textContent = rimasto;
+
+  ['P','D','C','A'].forEach(r => {
+    const n = rosa.giocatori.filter(g => g.ruolo === r).length;
+    const max = SLOT_MAX[r];
+    const el = document.getElementById('cnt-' + r);
+    const box = document.getElementById('slot-' + r);
+    el.textContent = n + '/' + max;
+    box.className = 'slot-box ' + (n >= max ? 'full' : n > 0 ? 'warn' : 'ok');
+  });
+
+  const list = document.getElementById('rosa-list');
+  list.innerHTML = '';
+
+  ['P','D','C','A'].forEach(r => {
+    const players = rosa.giocatori.map((g,i) => ({...g, idx:i})).filter(g => g.ruolo === r);
+    const div = document.createElement('div');
+    div.className = 'role-group';
+    div.innerHTML = `<h3><span class="role-dot" style="background:${ROLE_COLORS[r]}"></span>${roleLabel(r)}</h3>`;
+
+    players.forEach(g => {
+      div.innerHTML += `
+        <div class="player-card">
+          <div>
+            <div class="name">${g.nome}</div>
+            <div class="meta">${g.squadra}${g.quotazione ? ' · Q:' + g.quotazione : ''}</div>
+          </div>
+          <div style="display:flex;align-items:center">
+            <span class="price">${g.prezzo_pagato} cr</span>
+            <button class="remove" onclick="removePlayer(${g.idx})">×</button>
+          </div>
+        </div>`;
+    });
+
+    const empty = SLOT_MAX[r] - players.length;
+    for (let i = 0; i < empty; i++) {
+      div.innerHTML += `<div class="empty-slot">slot libero</div>`;
+    }
+
+    list.appendChild(div);
+  });
+}
+
+function roleLabel(r) {
+  return { P:'PORTIERI', D:'DIFENSORI', C:'CENTROCAMPISTI', A:'ATTACCANTI' }[r];
+}
+
+function getRimasto() { return BUDGET - rosa.speso; }
+function getSlotLiberi() {
+  return ['P','D','C','A'].map(r => {
+    const n = SLOT_MAX[r] - rosa.giocatori.filter(g=>g.ruolo===r).length;
+    return n > 0 ? `${n} ${r}` : null;
+  }).filter(Boolean).join(', ');
+}
+
+// ── Chat ─────────────────────────────────────────────────────────────────────
+function addMessage(role, content, typing=false) {
+  const msgs = document.getElementById('messages');
+  const div = document.createElement('div');
+  div.className = 'msg ' + role + (typing ? ' typing' : '');
+  const icon = role === 'user' ? '👤' : '⚽';
+  div.innerHTML = `
+    <div class="avatar">${icon}</div>
+    <div class="bubble">${escHtml(content)}</div>`;
+  msgs.appendChild(div);
+  msgs.scrollTop = msgs.scrollHeight;
+  return div;
+}
+
+function escHtml(t) {
+  return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+async function sendMessage(text) {
+  if (sending) return;
+  const input = document.getElementById('input');
+  const msg = text || input.value.trim();
+  if (!msg) return;
+
+  input.value = '';
+  autoResize(input);
+  sending = true;
+  document.getElementById('send-btn').disabled = true;
+
+  addMessage('user', msg);
+  history.push({ role: 'user', content: msg });
+
+  const typingEl = addMessage('assistant', '…', true);
+
+  try {
+    const resp = await fetch('/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: history, rosa })
+    });
+    const data = await resp.json();
+    typingEl.remove();
+    addMessage('assistant', data.reply);
+    history.push({ role: 'assistant', content: data.reply });
+  } catch(e) {
+    typingEl.remove();
+    addMessage('assistant', 'Errore di connessione. Verifica che Ollama sia attivo.');
+  }
+
+  sending = false;
+  document.getElementById('send-btn').disabled = false;
+}
+
+function quickSend(text) { sendMessage(text); }
+
+function handleKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) {
+    e.preventDefault();
+    sendMessage();
+  }
+}
+
+function autoResize(el) {
+  el.style.height = 'auto';
+  el.style.height = Math.min(el.scrollHeight, 120) + 'px';
+}
+
+// Init
+renderRosa();
+</script>
+</body>
+</html>
