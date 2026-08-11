@@ -9,6 +9,7 @@ Uso: python3 scripts/chat_preasta.py
 import os
 import re
 import json
+import threading
 import urllib.request
 import urllib.error
 import subprocess
@@ -443,6 +444,19 @@ def restart_ollama() -> bool:
         return False
 
 
+def ollama_status() -> str:
+    """Verifica se Ollama è attivo e se il modello è caricato. Ritorna una stringa di stato."""
+    try:
+        with urllib.request.urlopen("http://localhost:11434/api/tags", timeout=2) as resp:
+            tags = json.loads(resp.read())
+            models = [m["name"] for m in tags.get("models", [])]
+            if any(MODEL in m for m in models):
+                return "attivo"
+            return "attivo (modello non caricato)"
+    except OSError:
+        return "offline"
+
+
 def ollama_chat(messages: list, retry: bool = True, num_predict: int = 512) -> str:
     num_ctx = estimate_num_ctx(
         messages[0]["content"] if messages else "",
@@ -459,14 +473,35 @@ def ollama_chat(messages: list, retry: bool = True, num_predict: int = 512) -> s
         OLLAMA_URL, data=payload,
         headers={"Content-Type": "application/json"}, method="POST",
     )
+
+    # Timer live in un thread separato
+    _stop = threading.Event()
+    def _tick():
+        t = 0
+        while not _stop.is_set():
+            print(f"\r  ⏱  {t:3d}s ", end="", flush=True)
+            time.sleep(1)
+            t += 1
+    timer = threading.Thread(target=_tick, daemon=True)
+    timer.start()
+
+    t0 = time.time()
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
-            return json.loads(resp.read())["message"]["content"]
+            result = json.loads(resp.read())
+        elapsed = round(time.time() - t0, 1)
+        _stop.set()
+        print(f"\r  ✓ risposta in {elapsed}s{' ' * 10}")
+        return result["message"]["content"]
     except (urllib.error.URLError, TimeoutError):
+        _stop.set()
+        print(f"\r  ✗ timeout dopo {round(time.time()-t0)}s{' ' * 10}")
         if retry and restart_ollama():
-            return ollama_chat(messages, retry=False)
+            return ollama_chat(messages, retry=False, num_predict=num_predict)
         return "Ollama non risponde anche dopo il riavvio. Prova a rilanciare lo script."
     except (json.JSONDecodeError, KeyError) as e:
+        _stop.set()
+        print(f"\r  ✗ errore risposta{' ' * 20}")
         return f"[Errore risposta Ollama: {e}]"
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -481,7 +516,10 @@ def main():
     index = build_player_index(data)
     total = count_players(data)
     print(f" {total} calciatori pronti.")
-    print(f"  Modello: {MODEL}  |  storia max: {MAX_HISTORY_TURNS} turni")
+
+    status = ollama_status()
+    status_icon = "🟢" if status == "attivo" else ("🟡" if "non caricato" in status else "🔴")
+    print(f"  Modello: {MODEL}  |  Ollama: {status_icon} {status}  |  storia max: {MAX_HISTORY_TURNS} turni")
     print("─"*55)
     print("  Comandi: /esci  /reset  /storia  /picks")
     print("═"*55)
@@ -576,6 +614,9 @@ def main():
             + [{"role": "user", "content": user_msg}]
         )
 
+        status = ollama_status()
+        if status != "attivo":
+            print(f"  [Ollama: {status}]")
         print("AI: ", end="", flush=True)
         reply = ollama_chat(messages)
         print(reply + "\n")
