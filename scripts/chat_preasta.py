@@ -194,6 +194,122 @@ def build_context(roles: list[str], data: dict) -> str:
         sections.append(f"=== {labels[r]} ===\n{data[r]}")
     return "\n\n".join(sections)
 
+# ── Quick picks ──────────────────────────────────────────────────────────────
+
+# Ogni quick pick ha: label (da mostrare), ruoli da caricare, prompt ottimizzato.
+# I pick con ruoli=None sono gestiti in modo speciale (rosa sequenziale).
+QUICK_PICKS = [
+    {
+        "label": "Miglior portiere assoluto",
+        "roles": ["P"],
+        "prompt": "Qual è il miglior portiere da acquistare all'asta? Scegli UN solo nome. Indica: nome, squadra, quotazione ufficiale, prezzo massimo consigliato, motivazione in 2 righe.",
+    },
+    {
+        "label": "Miglior portiere low-cost (quotazione ≤ 5)",
+        "roles": ["P"],
+        "prompt": "Qual è il miglior portiere con quotazione ufficiale uguale o minore di 5 crediti? UN solo nome. Indica: nome, squadra, quotazione, prezzo massimo consigliato, motivazione in 2 righe.",
+    },
+    {
+        "label": "Difesa più forte possibile",
+        "roles": ["D"],
+        "prompt": "Costruisci la difesa più forte possibile per il Fantacalcio Classic. Scegli esattamente 8 difensori. Per ognuno: nome, squadra, quotazione ufficiale, prezzo massimo consigliato. Niente testo extra.",
+    },
+    {
+        "label": "Difesa economica (budget ≤ 60 crediti totali)",
+        "roles": ["D"],
+        "prompt": "Scegli 8 difensori con un budget totale massimo di 60 crediti (somma delle quotazioni ufficiali ≤ 60). Per ognuno: nome, squadra, quotazione. Mostra il totale alla fine.",
+    },
+    {
+        "label": "Centrocampo più forte (modulo 3-5-2)",
+        "roles": ["C"],
+        "prompt": "Scegli i 5 migliori centrocampisti per un modulo 3-5-2 al Fantacalcio Classic. Per ognuno: nome, squadra, quotazione ufficiale, prezzo massimo consigliato. Niente testo extra.",
+    },
+    {
+        "label": "Top 3 attaccanti da non perdere",
+        "roles": ["A"],
+        "prompt": "Quali sono i 3 attaccanti assolutamente da avere all'asta? Per ognuno: nome, squadra, quotazione ufficiale, prezzo massimo consigliato, motivazione in 1 riga.",
+    },
+    {
+        "label": "Attaccante sorpresa (FVM alto, quotazione bassa)",
+        "roles": ["A"],
+        "prompt": "Trova l'attaccante con il miglior rapporto FVM/quotazione — il 'bidone d'oro' dell'asta. UN solo nome. Mostra il calcolo: FVM ÷ quotazione. Indica prezzo massimo consigliato.",
+    },
+    {
+        "label": "Rosa competitiva completa (3-4-3)",
+        "roles": None,   # gestione speciale: sequenziale per ruolo
+        "modulo": {"P": 1, "D": 4, "C": 4, "A": 3},
+        "prompts": {
+            "P": "Scegli 2 portieri (1 titolare + 1 riserva) per una rosa 3-4-3 competitiva. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
+            "D": "Scegli 5 difensori (4 titolari + 1 riserva) per una rosa 3-4-3 competitiva. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
+            "C": "Scegli 5 centrocampisti (4 titolari + 1 riserva) per una rosa 3-4-3 competitiva. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
+            "A": "Scegli 4 attaccanti (3 titolari + 1 riserva) per una rosa 3-4-3 competitiva. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
+        },
+    },
+    {
+        "label": "Rosa low-cost (budget totale ≤ 250 crediti)",
+        "roles": None,   # gestione speciale: sequenziale per ruolo
+        "prompts": {
+            "P": "Scegli 2 portieri con budget massimo 20 crediti totali. Per ognuno: nome, squadra, quotazione.",
+            "D": "Scegli 5 difensori con budget massimo 70 crediti totali. Per ognuno: nome, squadra, quotazione.",
+            "C": "Scegli 5 centrocampisti con budget massimo 80 crediti totali. Per ognuno: nome, squadra, quotazione.",
+            "A": "Scegli 4 attaccanti con budget massimo 80 crediti totali. Per ognuno: nome, squadra, quotazione.",
+        },
+    },
+]
+
+def show_quick_picks_menu():
+    print("\n  ┌─ QUICK PICKS ─────────────────────────────────────┐")
+    for i, p in enumerate(QUICK_PICKS, 1):
+        print(f"  │  [{i:2d}] {p['label']}")
+    print("  │  [ 0] Torna alla chat libera")
+    print("  └────────────────────────────────────────────────────┘")
+
+def run_quick_pick(pick: dict, data: dict, history: list) -> list[dict]:
+    """
+    Esegue un quick pick e restituisce i messaggi da aggiungere alla storia.
+    Per le rose sequenziali stampa ruolo per ruolo.
+    """
+    new_history = []
+
+    if pick["roles"] is not None:
+        # Pick singolo ruolo
+        context = build_context(pick["roles"], data)
+        role_labels = {"P":"portieri","D":"difensori","C":"centrocampisti","A":"attaccanti"}
+        loaded = " + ".join(role_labels[r] for r in pick["roles"])
+        print(f"  [contesto: {loaded}]")
+        messages = [
+            {"role": "system", "content": BASE_SYSTEM + "\n\n" + context}
+        ] + history + [
+            {"role": "user", "content": pick["prompt"]}
+        ]
+        print("AI: ", end="", flush=True)
+        reply = ollama_chat(messages)
+        print(reply + "\n")
+        new_history.append({"role": "user",      "content": pick["prompt"]})
+        new_history.append({"role": "assistant",  "content": reply})
+
+    else:
+        # Rosa sequenziale: una chiamata per ruolo
+        role_order = ["P", "D", "C", "A"]
+        role_labels = {"P": "PORTIERI", "D": "DIFENSORI", "C": "CENTROCAMPISTI", "A": "ATTACCANTI"}
+        print(f"\n  [rosa sequenziale: 4 chiamate separate]\n")
+        for role in role_order:
+            prompt_r = pick["prompts"][role]
+            context  = build_context([role], data)
+            print(f"  ── {role_labels[role]} ──────────────────────────────")
+            messages = [
+                {"role": "system", "content": BASE_SYSTEM + "\n\n" + context}
+            ] + history + new_history + [
+                {"role": "user", "content": prompt_r}
+            ]
+            print("AI: ", end="", flush=True)
+            reply = ollama_chat(messages)
+            print(reply + "\n")
+            new_history.append({"role": "user",      "content": prompt_r})
+            new_history.append({"role": "assistant",  "content": reply})
+
+    return new_history
+
 # ── Chat con Ollama ───────────────────────────────────────────────────────────
 
 def restart_ollama():
@@ -248,8 +364,11 @@ def main():
     print(f" {total} calciatori pronti.")
     print(f"  Modello: {MODEL}")
     print("─"*55)
-    print("  Comandi: /esci  /reset  /storia")
-    print("═"*55 + "\n")
+    print("  Comandi: /esci  /reset  /storia  /picks")
+    print("═"*55)
+
+    show_quick_picks_menu()
+    print()
 
     # La storia non include il system prompt (viene ricostruito ad ogni turno)
     history: list[dict] = []
@@ -284,6 +403,27 @@ def main():
                     print(f"  [{label}] {preview}...")
                 print()
             continue
+
+        if user_input == "/picks":
+            show_quick_picks_menu()
+            print()
+            continue
+
+        # ── Selezione quick pick numerica ──
+        if user_input.isdigit():
+            n = int(user_input)
+            if n == 0:
+                print("→ Chat libera.\n")
+                continue
+            if 1 <= n <= len(QUICK_PICKS):
+                pick = QUICK_PICKS[n - 1]
+                print(f"\n  → {pick['label']}\n")
+                new_msgs = run_quick_pick(pick, data, history)
+                history.extend(new_msgs)
+                continue
+            else:
+                print(f"  → Numero non valido. Scegli tra 1 e {len(QUICK_PICKS)}, oppure 0.\n")
+                continue
 
         # ── Verifica nomi propri nella domanda ──
         checks = verify_names(user_input, index)
