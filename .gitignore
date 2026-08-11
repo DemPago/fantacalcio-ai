@@ -1,0 +1,42 @@
+# Dati sensibili
+.env
+*.secret
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dati personali (non committare la tua rosa reale)
+leghe/mantra/my_team/rosa.json
+leghe/classic/my_team/rosa.json
+leghe/mantra/my_team/crediti.json
+leghe/classic/my_team/crediti.json
+leghe/mantra/my_team/trasferimenti/mercato_log.json
+leghe/classic/my_team/trasferimenti/mercato_log.json
+leghe/mantra/weekly_logs/
+leghe/classic/weekly_logs/
+leghe/mantra/config.json
+leghe/classic/config.json
+
+# Listoni CSV (file grandi, non necessari nel repo)
+knowledge_base/listoni/*.csv
+knowledge_base/storici/*.csv
+
+# Tieni i template e i placeholder
+!leghe/mantra/my_team/rosa.json.template
+!leghe/classic/my_team/rosa.json.template
