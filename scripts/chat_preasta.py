@@ -10,6 +10,8 @@ import os
 import json
 import urllib.request
 import urllib.error
+import subprocess
+import time
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUOLI_DIR = os.path.join(BASE, "knowledge_base", "listoni", "per_ruolo_classic")
@@ -74,7 +76,24 @@ def build_context(roles: list[str], data: dict) -> str:
 
 # ── Chat con Ollama ───────────────────────────────────────────────────────────
 
-def ollama_chat(messages: list) -> str:
+def restart_ollama():
+    """Riavvia Ollama silenziosamente e attende che sia pronto."""
+    print("  [riavvio Ollama...]", end="", flush=True)
+    subprocess.run(["pkill", "ollama"], capture_output=True)
+    time.sleep(3)
+    subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    # Aspetta fino a 15 secondi che risponda
+    for _ in range(15):
+        try:
+            urllib.request.urlopen("http://localhost:11434", timeout=1)
+            print(" pronto.")
+            return True
+        except:
+            time.sleep(1)
+    print(" fallito.")
+    return False
+
+def ollama_chat(messages: list, retry: bool = True) -> str:
     payload = json.dumps({
         "model": MODEL,
         "messages": messages,
@@ -89,8 +108,11 @@ def ollama_chat(messages: list) -> str:
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
             return json.loads(resp.read())["message"]["content"]
-    except urllib.error.URLError:
-        return "ERRORE: Ollama non raggiungibile. Avvialo con: ollama serve"
+    except (urllib.error.URLError, TimeoutError):
+        if retry:
+            if restart_ollama():
+                return ollama_chat(messages, retry=False)
+        return "Ollama non risponde anche dopo il riavvio. Prova a rilanciare lo script."
 
 # ── Main ──────────────────────────────────────────────────────────────────────
 
