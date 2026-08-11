@@ -1,0 +1,33 @@
+{
+  "giornata": 1,
+  "data": "YYYY-MM-DD",
+  "modalita": "Mantra",
+  "avversario": "NOME AVVERSARIO",
+  "modulo": "4-3-1-2",
+  "_modulo_validi": "3-4-1-2 | 3-4-2-1 | 3-4-3 | 3-5-2 | 4-1-4-1 | 4-2-3-1 | 4-3-1-2 | 4-3-2-1 | 4-3-3 | 4-4-2 | 5-3-2",
+  "titolari": [
+    { "id": "por_01", "nome": "NOME COGNOME", "ruolo_schierato": "Por" },
+    { "id": "dc_01",  "nome": "NOME COGNOME", "ruolo_schierato": "Dc" },
+    { "id": "dc_02",  "nome": "NOME COGNOME", "ruolo_schierato": "Dc" },
+    { "id": "dd_01",  "nome": "NOME COGNOME", "ruolo_schierato": "Dd" },
+    { "id": "ds_01",  "nome": "NOME COGNOME", "ruolo_schierato": "Ds" },
+    { "id": "m_01",   "nome": "NOME COGNOME", "ruolo_schierato": "M" },
+    { "id": "c_01",   "nome": "NOME COGNOME", "ruolo_schierato": "C" },
+    { "id": "c_02",   "nome": "NOME COGNOME", "ruolo_schierato": "C" },
+    { "id": "t_01",   "nome": "NOME COGNOME", "ruolo_schierato": "T" },
+    { "id": "pc_01",  "nome": "NOME COGNOME", "ruolo_schierato": "Pc" },
+    { "id": "pc_02",  "nome": "NOME COGNOME", "ruolo_schierato": "Pc" }
+  ],
+  "panchina": [
+    {
+      "id": "por_02", "nome": "NOME COGNOME", "ruolo_mantra": "Por",
+      "ordine": 1,
+      "_nota_ordine": "MANTRA: ordine per PREFERENZA ASSOLUTA, non per ruolo. Metti prima chi vuoi che entri."
+    },
+    { "id": "dc_03",  "nome": "NOME COGNOME", "ruolo_mantra": "Dc",  "ordine": 2 },
+    { "id": "m_02",   "nome": "NOME COGNOME", "ruolo_mantra": "M/C", "ordine": 3 },
+    { "id": "w_01",   "nome": "NOME COGNOME", "ruolo_mantra": "W",   "ordine": 4 },
+    { "id": "a_01",   "nome": "NOME COGNOME", "ruolo_mantra": "A",   "ordine": 5 },
+    { "id": "pc_03",  "nome": "NOME COGNOME", "ruolo_mantra": "Pc",  "ordine": 6 }
+  ]
+}
