@@ -41,16 +41,16 @@ def count_players(data: dict) -> int:
 def detect_roles(text: str) -> list[str]:
     t = text.lower()
     roles = []
-    if any(w in t for w in ["portier", " p ", "por", "keeper"]):
+    if any(w in t for w in ["portier", "porta", "keeper", "estremo difensor"]):
         roles.append("P")
-    if any(w in t for w in ["difensor", " d ", "terzin", "centr-dif"]):
+    if any(w in t for w in ["difensor", "difesa", "terzin", "backline", "reparto difensiv"]):
         roles.append("D")
-    if any(w in t for w in ["centrocampist", " c ", "mezzal", "trequart", "mediano"]):
+    if any(w in t for w in ["centrocampist", "centrocampo", "mezzal", "trequart", "mediano", "regista"]):
         roles.append("C")
-    if any(w in t for w in ["attaccan", " a ", "punta", "bomber", "centravant"]):
+    if any(w in t for w in ["attaccan", "attacco", "punta", "bomber", "centravant", "prima punta"]):
         roles.append("A")
-    # Se non rileva nulla di specifico o chiede di tutto → tutti i ruoli
-    if not roles or any(w in t for w in ["tutti", "tutta", "rosa", "strategia", "budget", "asta", "reparto", "low cost"]):
+    # Solo per domande esplicitamente globali → tutti i ruoli
+    if not roles or any(w in t for w in ["tutti i ruoli", "tutta la rosa", "intera rosa", "strategia", "budget", "distribu"]):
         roles = ["P", "D", "C", "A"]
     return roles
 
