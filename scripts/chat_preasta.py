@@ -33,6 +33,53 @@ def load_files() -> dict:
             data[role] = f.read()
     return data
 
+def build_player_index(data: dict) -> dict:
+    """Dizionario nome_lower → {nome, squadra, ruolo, quotazione, fvm}"""
+    import re
+    index = {}
+    pattern = re.compile(r'^(.+?) gioca nel (.+?), ruolo .+?, quotazione (\d+) crediti, FVM (\d+)\.')
+    for ruolo, content in data.items():
+        for line in content.splitlines():
+            m = pattern.match(line.strip())
+            if m:
+                nome = m.group(1)
+                index[nome.lower()] = {
+                    "nome": nome, "squadra": m.group(2),
+                    "ruolo": ruolo, "quotazione": int(m.group(3)), "fvm": int(m.group(4))
+                }
+    return index
+
+def verify_names(text: str, index: dict) -> list[dict]:
+    """Cerca parole con iniziale maiuscola nel testo e verifica se sono nel listone."""
+    import re
+    # Parole con maiuscola che non siano inizio frase (precedute da spazio)
+    candidates = re.findall(r'(?<= )([A-Z][a-zàèéìòùA-Z]+(?:\s+[A-Z][a-z]+)?)', text)
+    # Aggiungi anche prima parola se è un nome
+    first = re.match(r'^([A-Z][a-zàèéìòùA-Z]+)', text)
+    if first:
+        candidates.append(first.group(1))
+    
+    results = []
+    seen = set()
+    for c in candidates:
+        key = c.lower()
+        key_nospace = key.replace(" ", "")
+
+        # Cerca corrispondenza: esatta, senza spazi, o parziale (min 4 char)
+        found = index.get(key) or index.get(key_nospace)
+        if not found:
+            for k, v in index.items():
+                if (len(key) >= 4 and key in k) or (len(key_nospace) >= 4 and key_nospace in k):
+                    found = v
+                    break
+        if found and found["nome"] not in seen:
+            seen.add(found["nome"])
+            results.append({"cercato": c, "trovato": True, "dati": found})
+        elif len(c) >= 4 and c not in seen:
+            seen.add(c)
+            results.append({"cercato": c, "trovato": False, "dati": None})
+    return results
+
 def count_players(data: dict) -> int:
     return sum(line.count("gioca nel") for d in data.values() for line in d.splitlines())
 
@@ -123,6 +170,7 @@ def main():
     print("  Caricamento listone...", end="", flush=True)
 
     data = load_files()
+    index = build_player_index(data)
     total = count_players(data)
     print(f" {total} calciatori pronti.")
     print(f"  Modello: {MODEL}")
@@ -163,6 +211,23 @@ def main():
                     print(f"  [{label}] {preview}...")
                 print()
             continue
+
+        # ── Verifica nomi propri nella domanda ──
+        checks = verify_names(user_input, index)
+        nomi_ok = [c for c in checks if c["trovato"]]
+        nomi_ko = [c for c in checks if not c["trovato"]]
+
+        if nomi_ok:
+            for c in nomi_ok:
+                d = c["dati"]
+                print(f"  ✓ {d['nome']} ({d['squadra']}, {d['ruolo']}, Q:{d['quotazione']}, FVM:{d['fvm']})")
+        if nomi_ko:
+            for c in nomi_ko:
+                print(f"  ✗ '{c['cercato']}' non trovato nel listone — potrebbe essere un nome inventato")
+            # Se TUTTI i nomi sono inventati, blocca prima di chiamare il modello
+            if not nomi_ok and nomi_ko:
+                print("  → Nessun nome valido trovato. Correggi il nome e riprova.\n")
+                continue
 
         # Rileva i ruoli rilevanti per questa domanda
         # Considera anche il testo delle ultime domande per il contesto
