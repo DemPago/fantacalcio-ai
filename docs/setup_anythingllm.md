@@ -38,7 +38,7 @@ Tutto gira in locale sul tuo Mac. Nessun dato viene inviato online.
 5. Al primo avvio ti chiede di configurare un LLM:
    - Seleziona **Ollama**
    - Base URL: `http://localhost:11434`
-   - Seleziona il modello: `qwen2.5`
+   - Seleziona il modello: `gemma3:4b`
    - Clicca **Save**
 
 ---
@@ -51,7 +51,7 @@ Se hai saltato la configurazione iniziale, puoi farlo anche dopo:
 2. Vai su **LLM Preference**
 3. Seleziona **Ollama**
 4. Base URL: `http://localhost:11434`
-5. Modello: scegli `qwen2.5` dal dropdown
+5. Modello: scegli `gemma3:4b` dal dropdown
 6. Clicca **Save changes**
 
 ---
@@ -184,7 +184,7 @@ Poi in AnythingLLM:
 | Problema | Soluzione |
 |----------|-----------|
 | AnythingLLM non trova Ollama | Verifica che Ollama sia avviato (icona nella barra menu) |
-| Risposte lente | Normale per modelli 7B su Mac senza GPU dedicata. Prova `llama3.2:3b` per risposte più veloci |
+| Risposte lente | Con `gemma3:4b` dovrebbe essere abbastanza veloce. Se vuoi più qualità prova `ollama pull qwen2.5` |
 | Il modello non usa i documenti | Controlla che Chat Mode sia **Query** e che i file siano stati indicizzati (verde = ok) |
 | Risposte in inglese | Aggiungi `Rispondi sempre in italiano.` alla fine del system prompt |
 | Errore "context length exceeded" | Riduci Max Chunks a 6 o usa un modello con context window più grande |
