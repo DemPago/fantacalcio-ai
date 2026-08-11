@@ -1,184 +1,182 @@
-# Calciatori Difensori — Serie A Fantacalcio Mantra 2026-27
+# Difensori — Fantacalcio Mantra 2026-27
 Totale: 179 calciatori
 
-| Nome | Squadra | Ruolo Mantra | Quotazione | FVM |
-|------|---------|-------------|-----------|-----|
-| Wesley | Roma | E | 16 | 21 |
-| Akanji | Inter | Dc | 16 | 14 |
-| Bremer | Juventus | Dc | 15 | 13 |
-| Mancini | Roma | Dc | 15 | 12 |
-| Pavlovic | Milan | Dc | 14 | 12 |
-| Kalulu | Juventus | Dd/Dc | 14 | 12 |
-| Rrahmani | Napoli | Dc | 14 | 12 |
-| Bastoni | Inter | Dc | 14 | 11 |
-| Solet | Udinese | Dc | 13 | 12 |
-| N'Dicka | Roma | Dc | 13 | 11 |
-| Di Lorenzo | Napoli | Dd/E | 12 | 10 |
-| Stones | Inter | Dc | 12 | 10 |
-| Gila | Milan | Dc | 12 | 8 |
-| Ostigard | Genoa | Dc | 11 | 10 |
-| Bisseck | Inter | Dc | 11 | 8 |
-| Vasquez | Genoa | Ds/Dc | 10 | 9 |
-| Ramon | Como | Dc | 10 | 8 |
-| Dodò | Fiorentina | Dd/E | 10 | 8 |
-| Cambiaso | Juventus | Dd/Ds/E | 10 | 8 |
-| Chalobah T. | Como | Dd/Dc | 10 | 7 |
-| Scalvini | Atalanta | Dc | 10 | 7 |
-| Hermoso | Roma | Dc | 10 | 7 |
-| Jimenez A. | Fiorentina | Dd/Ds/E | 9 | 6 |
-| Celik | Juventus | B/Dd/E | 9 | 6 |
-| Carlos Augusto | Inter | B/Ds/E | 8 | 8 |
-| Couto | Como | Dd/E | 8 | 7 |
-| Gutierrez | Napoli | Ds/E | 8 | 7 |
-| Dragusin | Fiorentina | Dc | 8 | 7 |
-| Norton-Cuffy | Genoa | Dd/E | 8 | 6 |
-| Delprato | Parma | B/Dd/E | 8 | 6 |
-| Bartesaghi | Milan | Ds/E | 8 | 6 |
-| Valeri | Parma | Ds/E | 8 | 6 |
-| Miranda J. | Bologna | Ds/E | 8 | 6 |
-| Spinazzola | Napoli | Ds/E | 8 | 6 |
-| Zappacosta | Atalanta | Dd/E | 8 | 6 |
-| Koulierakis | Roma | Dc | 8 | 5 |
-| Lucumì | Bologna | Dc | 8 | 5 |
-| Vojvoda | Udinese | Dd/E | 8 | 5 |
-| Mina | Cagliari | Dc | 8 | 5 |
-| Kristensen T. | Udinese | Dd/Dc | 8 | 4 |
-| Hien | Atalanta | Dc | 8 | 4 |
-| Kaiki | Como | Ds/E | 7 | 6 |
-| Doekhi | Lazio | Dc | 7 | 6 |
-| Gabbia | Milan | Dc | 7 | 6 |
-| Romagnoli | Lazio | Dc | 7 | 6 |
-| Viery | Fiorentina | Ds/Dc | 7 | 5 |
-| Valdepenas | Fiorentina | Ds/Dc | 7 | 5 |
-| Ahanor | Atalanta | B/Ds/E | 7 | 5 |
-| Idzes | Sassuolo | Dc | 7 | 5 |
-| Coco | Torino | Dc | 7 | 5 |
-| Ismajli | Torino | Dc | 7 | 5 |
-| Tomori | Milan | Dc | 7 | 5 |
-| Pavard | Inter | Dd/Dc | 7 | 5 |
-| Buongiorno | Napoli | Dc | 7 | 5 |
-| Heggem | Bologna | Ds/Dc | 7 | 4 |
-| Tiago Gabriel | Lecce | Dc | 7 | 4 |
-| Obert | Cagliari | B/Ds/E | 7 | 4 |
-| Djimsiti | Atalanta | Dc | 7 | 4 |
-| Marusic | Lazio | Dd/Ds/E | 6 | 6 |
-| Rensch | Roma | B/Dd/E | 6 | 5 |
-| Valle | Como | Ds/E | 6 | 5 |
-| Circati | Parma | Dc | 6 | 5 |
-| Zortea | Bologna | Dd/E | 6 | 5 |
-| Mangas | Monza | Ds/E | 6 | 4 |
-| Bernasconi | Atalanta | Ds/E | 6 | 4 |
-| Kelly L. | Juventus | Ds/Dc | 6 | 4 |
-| Beukema | Napoli | Dc | 6 | 4 |
-| Olivera | Napoli | B/Ds/E | 6 | 4 |
-| Bertola | Udinese | Dd/Ds/Dc | 6 | 4 |
-| Tavares N. | Lazio | Ds/E | 6 | 4 |
-| Monterisi | Frosinone | Dc | 6 | 4 |
-| Bellanova | Atalanta | Dd/E | 6 | 4 |
-| Kolasinac | Atalanta | Ds/Dc | 6 | 4 |
-| Zè Pedro | Cagliari | Dd/Dc | 6 | 3 |
-| Bella-Kotchap | Venezia | Dc | 6 | 3 |
-| Marcandalli | Genoa | Dc | 6 | 3 |
-| Comuzzo | Torino | Dc | 6 | 3 |
-| Kamara H. | Udinese | Ds/E | 6 | 3 |
-| Gallo | Lecce | Ds/E | 6 | 3 |
-| Birindelli | Monza | Dd/Ds/E | 5 | 4 |
-| Pedraza | Lazio | Ds/E | 5 | 4 |
-| Martin | Genoa | Ds/E | 5 | 4 |
-| Kofler | Cagliari | Dc | 5 | 3 |
-| Bracaglia | Frosinone | Ds/Dc | 5 | 3 |
-| Vitik | Bologna | Dc | 5 | 3 |
-| Veiga D. | Lecce | Dd/E | 5 | 3 |
-| Kempf | Como | Dc | 5 | 3 |
-| Moreno M. | Venezia | Dc | 5 | 3 |
-| Gaspar K. | Lecce | Dc | 5 | 3 |
-| Pedersen | Torino | Dd/E | 5 | 3 |
-| Oyono A. | Frosinone | Dd/E | 5 | 3 |
-| Haps | Venezia | Ds/E | 5 | 3 |
-| Holm | Bologna | Dd/E | 5 | 3 |
-| Parisi | Fiorentina | Ds/E | 5 | 3 |
-| De Winter | Milan | Dd/Dc | 4 | 4 |
-| Halhal | Venezia | Dc | 4 | 3 |
-| Comert | Torino | Dc | 4 | 3 |
-| Calvani | Frosinone | Dc | 4 | 3 |
-| Rodriguez Ju. | Cagliari | Ds/Dc | 4 | 3 |
-| Britschgi | Parma | Dd/Ds/E | 4 | 3 |
-| Siebert | Lecce | Dc | 4 | 3 |
-| Smolcic I. | Como | Dd/E | 4 | 3 |
-| Lucchesi | Monza | Dc | 4 | 3 |
-| Ghilardi | Roma | Dc | 4 | 3 |
-| Doig | Sassuolo | Ds/E | 4 | 3 |
-| Gatti | Juventus | Dc | 4 | 3 |
-| Zanoli | Udinese | Dd/E | 4 | 3 |
-| Valenti | Parma | Dc | 4 | 3 |
-| Carboni A. | Monza | Ds/Dc | 4 | 3 |
-| Correia T. | Venezia | Dd/E | 4 | 3 |
-| Zappa | Cagliari | B/Dd/E | 4 | 3 |
-| Walukiewicz | Sassuolo | Dd/Dc | 4 | 3 |
-| Delli Carri | Monza | Dc | 4 | 3 |
-| Mitaj | Genoa | Ds/E | 4 | 2 |
-| Arizala | Udinese | Ds/E | 4 | 2 |
-| Pongracic | Fiorentina | Dc | 4 | 2 |
-| Kabasele | Udinese | Dc | 4 | 2 |
-| Candè | Sassuolo | Ds/Dc | 3 | 4 |
-| Kouadio | Monza | Dd/Dc | 3 | 3 |
-| Floriani Mussolini | Lazio | Dd/E | 3 | 3 |
-| Provstgaard | Lazio | Dc | 3 | 3 |
-| Angelino | Roma | E | 3 | 3 |
-| Akpoguma | Frosinone | Dc | 3 | 2 |
-| Troilo | Parma | Dc | 3 | 2 |
-| Athekame | Milan | Dd/E | 3 | 2 |
-| Joao Mario | Fiorentina | Dd/E | 3 | 2 |
-| Idrissi R. | Cagliari | Ds/E | 3 | 2 |
-| Schingtienne | Venezia | Dc | 3 | 2 |
-| Hainaut | Venezia | Dd/E | 3 | 2 |
-| Sverko | Venezia | Ds/Dc | 3 | 2 |
-| Cittadini | Frosinone | Dc | 3 | 2 |
-| Kossounou | Atalanta | Dd/Dc | 3 | 2 |
-| Casale | Bologna | Dc | 3 | 2 |
-| Estupinan | Milan | Ds/E | 3 | 2 |
-| Ranieri L. | Fiorentina | Ds/Dc | 3 | 2 |
-| Alhassane | Bologna | Ds/E | 2 | 2 |
-| Puczka | Genoa | Ds/E | 2 | 2 |
-| Marin R. | Napoli | Dc | 2 | 2 |
-| Lazzari | Lazio | Dd/E | 2 | 2 |
-| Biraghi | Torino | B/Ds/E | 2 | 2 |
-| Aurelio | Cagliari | Ds/E | 2 | 1 |
-| Diawara S. | Milan | Ds/Dc | 2 | 1 |
-| Franjic | Venezia | B/Ds/E | 2 | 1 |
-| Helland | Bologna | Dd/Dc | 2 | 1 |
-| Otoa | Genoa | Dc | 2 | 1 |
-| Palma | Udinese | Dc | 2 | 1 |
-| Van Der Brempt | Como | Dd/E | 2 | 1 |
-| Jean | Lecce | Dc | 2 | 1 |
-| Sagrado | Venezia | Dd/E | 2 | 1 |
-| Ebosse | Udinese | Ds/Dc | 2 | 1 |
-| Pellegrini Lu. | Lazio | Ds/E | 2 | 1 |
-| Sabelli | Genoa | Dd/Ds/E | 2 | 1 |
-| Cuenca A. | Como | Ds/Dc | 1 | 2 |
-| Bakoune | Monza | Dd/E | 1 | 1 |
-| Corrado | Frosinone | Ds/E | 1 | 1 |
-| Oyono J. | Frosinone | Dd/E | 1 | 1 |
-| Gelli J. | Frosinone | Dc | 1 | 1 |
-| Gomes | Venezia | Ds/Dc | 1 | 1 |
-| Mlacic | Udinese | Dc | 1 | 1 |
-| Raterink | Cagliari | Dd/E | 1 | 1 |
-| Ziolkowski | Roma | Dc | 1 | 1 |
-| Ndiaye | Parma | Dc | 1 | 1 |
-| Ndaba | Lecce | Ds/E | 1 | 1 |
-| Perez M. | Lecce | Dd/Dc | 1 | 1 |
-| Pieragnolo | Sassuolo | Ds/E | 1 | 1 |
-| Marianucci | Napoli | Dc | 1 | 1 |
-| Vogliacco | Genoa | Dd/Dc | 1 | 1 |
-| Matturro | Genoa | Ds/Dc | 1 | 1 |
-| Missori | Sassuolo | Dd/E | 1 | 1 |
-| Carboni F. | Parma | Ds/E | 1 | 1 |
-| Cabal | Juventus | B/Ds/E | 1 | 1 |
-| Abankwah | Udinese | Dd/Dc | 1 | 1 |
-| Mazzocchi | Napoli | Dd/Ds/E | 1 | 1 |
-| Amey | Frosinone | Dc | 1 | 1 |
-| Antov | Monza | Dc | 1 | 1 |
-| De Silvestri | Bologna | Dd/E | 1 | 1 |
-| Goldaniga | Como | Dc | 1 | 1 |
-| Patric | Lazio | Dd/Dc | 1 | 1 |
-| Rugani | Juventus | Dc | 1 | 1 |
+Wesley gioca nel Roma, ruolo Mantra E, quotazione 16 crediti, FVM 21.
+Akanji gioca nel Inter, ruolo Mantra Dc, quotazione 16 crediti, FVM 14.
+Bremer gioca nel Juventus, ruolo Mantra Dc, quotazione 15 crediti, FVM 13.
+Mancini gioca nel Roma, ruolo Mantra Dc, quotazione 15 crediti, FVM 12.
+Pavlovic gioca nel Milan, ruolo Mantra Dc, quotazione 14 crediti, FVM 12.
+Kalulu gioca nel Juventus, ruolo Mantra Dd/Dc, quotazione 14 crediti, FVM 12.
+Rrahmani gioca nel Napoli, ruolo Mantra Dc, quotazione 14 crediti, FVM 12.
+Bastoni gioca nel Inter, ruolo Mantra Dc, quotazione 14 crediti, FVM 11.
+Solet gioca nel Udinese, ruolo Mantra Dc, quotazione 13 crediti, FVM 12.
+N'Dicka gioca nel Roma, ruolo Mantra Dc, quotazione 13 crediti, FVM 11.
+Di Lorenzo gioca nel Napoli, ruolo Mantra Dd/E, quotazione 12 crediti, FVM 10.
+Stones gioca nel Inter, ruolo Mantra Dc, quotazione 12 crediti, FVM 10.
+Gila gioca nel Milan, ruolo Mantra Dc, quotazione 12 crediti, FVM 8.
+Ostigard gioca nel Genoa, ruolo Mantra Dc, quotazione 11 crediti, FVM 10.
+Bisseck gioca nel Inter, ruolo Mantra Dc, quotazione 11 crediti, FVM 8.
+Vasquez gioca nel Genoa, ruolo Mantra Ds/Dc, quotazione 10 crediti, FVM 9.
+Ramon gioca nel Como, ruolo Mantra Dc, quotazione 10 crediti, FVM 8.
+Dodò gioca nel Fiorentina, ruolo Mantra Dd/E, quotazione 10 crediti, FVM 8.
+Cambiaso gioca nel Juventus, ruolo Mantra Dd/Ds/E, quotazione 10 crediti, FVM 8.
+Chalobah T. gioca nel Como, ruolo Mantra Dd/Dc, quotazione 10 crediti, FVM 7.
+Scalvini gioca nel Atalanta, ruolo Mantra Dc, quotazione 10 crediti, FVM 7.
+Hermoso gioca nel Roma, ruolo Mantra Dc, quotazione 10 crediti, FVM 7.
+Jimenez A. gioca nel Fiorentina, ruolo Mantra Dd/Ds/E, quotazione 9 crediti, FVM 6.
+Celik gioca nel Juventus, ruolo Mantra B/Dd/E, quotazione 9 crediti, FVM 6.
+Carlos Augusto gioca nel Inter, ruolo Mantra B/Ds/E, quotazione 8 crediti, FVM 8.
+Couto gioca nel Como, ruolo Mantra Dd/E, quotazione 8 crediti, FVM 7.
+Gutierrez gioca nel Napoli, ruolo Mantra Ds/E, quotazione 8 crediti, FVM 7.
+Dragusin gioca nel Fiorentina, ruolo Mantra Dc, quotazione 8 crediti, FVM 7.
+Norton-Cuffy gioca nel Genoa, ruolo Mantra Dd/E, quotazione 8 crediti, FVM 6.
+Delprato gioca nel Parma, ruolo Mantra B/Dd/E, quotazione 8 crediti, FVM 6.
+Bartesaghi gioca nel Milan, ruolo Mantra Ds/E, quotazione 8 crediti, FVM 6.
+Valeri gioca nel Parma, ruolo Mantra Ds/E, quotazione 8 crediti, FVM 6.
+Miranda J. gioca nel Bologna, ruolo Mantra Ds/E, quotazione 8 crediti, FVM 6.
+Spinazzola gioca nel Napoli, ruolo Mantra Ds/E, quotazione 8 crediti, FVM 6.
+Zappacosta gioca nel Atalanta, ruolo Mantra Dd/E, quotazione 8 crediti, FVM 6.
+Koulierakis gioca nel Roma, ruolo Mantra Dc, quotazione 8 crediti, FVM 5.
+Lucumì gioca nel Bologna, ruolo Mantra Dc, quotazione 8 crediti, FVM 5.
+Vojvoda gioca nel Udinese, ruolo Mantra Dd/E, quotazione 8 crediti, FVM 5.
+Mina gioca nel Cagliari, ruolo Mantra Dc, quotazione 8 crediti, FVM 5.
+Kristensen T. gioca nel Udinese, ruolo Mantra Dd/Dc, quotazione 8 crediti, FVM 4.
+Hien gioca nel Atalanta, ruolo Mantra Dc, quotazione 8 crediti, FVM 4.
+Kaiki gioca nel Como, ruolo Mantra Ds/E, quotazione 7 crediti, FVM 6.
+Doekhi gioca nel Lazio, ruolo Mantra Dc, quotazione 7 crediti, FVM 6.
+Gabbia gioca nel Milan, ruolo Mantra Dc, quotazione 7 crediti, FVM 6.
+Romagnoli gioca nel Lazio, ruolo Mantra Dc, quotazione 7 crediti, FVM 6.
+Viery gioca nel Fiorentina, ruolo Mantra Ds/Dc, quotazione 7 crediti, FVM 5.
+Valdepenas gioca nel Fiorentina, ruolo Mantra Ds/Dc, quotazione 7 crediti, FVM 5.
+Ahanor gioca nel Atalanta, ruolo Mantra B/Ds/E, quotazione 7 crediti, FVM 5.
+Idzes gioca nel Sassuolo, ruolo Mantra Dc, quotazione 7 crediti, FVM 5.
+Coco gioca nel Torino, ruolo Mantra Dc, quotazione 7 crediti, FVM 5.
+Ismajli gioca nel Torino, ruolo Mantra Dc, quotazione 7 crediti, FVM 5.
+Tomori gioca nel Milan, ruolo Mantra Dc, quotazione 7 crediti, FVM 5.
+Pavard gioca nel Inter, ruolo Mantra Dd/Dc, quotazione 7 crediti, FVM 5.
+Buongiorno gioca nel Napoli, ruolo Mantra Dc, quotazione 7 crediti, FVM 5.
+Heggem gioca nel Bologna, ruolo Mantra Ds/Dc, quotazione 7 crediti, FVM 4.
+Tiago Gabriel gioca nel Lecce, ruolo Mantra Dc, quotazione 7 crediti, FVM 4.
+Obert gioca nel Cagliari, ruolo Mantra B/Ds/E, quotazione 7 crediti, FVM 4.
+Djimsiti gioca nel Atalanta, ruolo Mantra Dc, quotazione 7 crediti, FVM 4.
+Marusic gioca nel Lazio, ruolo Mantra Dd/Ds/E, quotazione 6 crediti, FVM 6.
+Rensch gioca nel Roma, ruolo Mantra B/Dd/E, quotazione 6 crediti, FVM 5.
+Valle gioca nel Como, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 5.
+Circati gioca nel Parma, ruolo Mantra Dc, quotazione 6 crediti, FVM 5.
+Zortea gioca nel Bologna, ruolo Mantra Dd/E, quotazione 6 crediti, FVM 5.
+Mangas gioca nel Monza, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 4.
+Bernasconi gioca nel Atalanta, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 4.
+Kelly L. gioca nel Juventus, ruolo Mantra Ds/Dc, quotazione 6 crediti, FVM 4.
+Beukema gioca nel Napoli, ruolo Mantra Dc, quotazione 6 crediti, FVM 4.
+Olivera gioca nel Napoli, ruolo Mantra B/Ds/E, quotazione 6 crediti, FVM 4.
+Bertola gioca nel Udinese, ruolo Mantra Dd/Ds/Dc, quotazione 6 crediti, FVM 4.
+Tavares N. gioca nel Lazio, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 4.
+Monterisi gioca nel Frosinone, ruolo Mantra Dc, quotazione 6 crediti, FVM 4.
+Bellanova gioca nel Atalanta, ruolo Mantra Dd/E, quotazione 6 crediti, FVM 4.
+Kolasinac gioca nel Atalanta, ruolo Mantra Ds/Dc, quotazione 6 crediti, FVM 4.
+Zè Pedro gioca nel Cagliari, ruolo Mantra Dd/Dc, quotazione 6 crediti, FVM 3.
+Bella-Kotchap gioca nel Venezia, ruolo Mantra Dc, quotazione 6 crediti, FVM 3.
+Marcandalli gioca nel Genoa, ruolo Mantra Dc, quotazione 6 crediti, FVM 3.
+Comuzzo gioca nel Torino, ruolo Mantra Dc, quotazione 6 crediti, FVM 3.
+Kamara H. gioca nel Udinese, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 3.
+Gallo gioca nel Lecce, ruolo Mantra Ds/E, quotazione 6 crediti, FVM 3.
+Birindelli gioca nel Monza, ruolo Mantra Dd/Ds/E, quotazione 5 crediti, FVM 4.
+Pedraza gioca nel Lazio, ruolo Mantra Ds/E, quotazione 5 crediti, FVM 4.
+Martin gioca nel Genoa, ruolo Mantra Ds/E, quotazione 5 crediti, FVM 4.
+Kofler gioca nel Cagliari, ruolo Mantra Dc, quotazione 5 crediti, FVM 3.
+Bracaglia gioca nel Frosinone, ruolo Mantra Ds/Dc, quotazione 5 crediti, FVM 3.
+Vitik gioca nel Bologna, ruolo Mantra Dc, quotazione 5 crediti, FVM 3.
+Veiga D. gioca nel Lecce, ruolo Mantra Dd/E, quotazione 5 crediti, FVM 3.
+Kempf gioca nel Como, ruolo Mantra Dc, quotazione 5 crediti, FVM 3.
+Moreno M. gioca nel Venezia, ruolo Mantra Dc, quotazione 5 crediti, FVM 3.
+Gaspar K. gioca nel Lecce, ruolo Mantra Dc, quotazione 5 crediti, FVM 3.
+Pedersen gioca nel Torino, ruolo Mantra Dd/E, quotazione 5 crediti, FVM 3.
+Oyono A. gioca nel Frosinone, ruolo Mantra Dd/E, quotazione 5 crediti, FVM 3.
+Haps gioca nel Venezia, ruolo Mantra Ds/E, quotazione 5 crediti, FVM 3.
+Holm gioca nel Bologna, ruolo Mantra Dd/E, quotazione 5 crediti, FVM 3.
+Parisi gioca nel Fiorentina, ruolo Mantra Ds/E, quotazione 5 crediti, FVM 3.
+De Winter gioca nel Milan, ruolo Mantra Dd/Dc, quotazione 4 crediti, FVM 4.
+Halhal gioca nel Venezia, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Comert gioca nel Torino, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Calvani gioca nel Frosinone, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Rodriguez Ju. gioca nel Cagliari, ruolo Mantra Ds/Dc, quotazione 4 crediti, FVM 3.
+Britschgi gioca nel Parma, ruolo Mantra Dd/Ds/E, quotazione 4 crediti, FVM 3.
+Siebert gioca nel Lecce, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Smolcic I. gioca nel Como, ruolo Mantra Dd/E, quotazione 4 crediti, FVM 3.
+Lucchesi gioca nel Monza, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Ghilardi gioca nel Roma, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Doig gioca nel Sassuolo, ruolo Mantra Ds/E, quotazione 4 crediti, FVM 3.
+Gatti gioca nel Juventus, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Zanoli gioca nel Udinese, ruolo Mantra Dd/E, quotazione 4 crediti, FVM 3.
+Valenti gioca nel Parma, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Carboni A. gioca nel Monza, ruolo Mantra Ds/Dc, quotazione 4 crediti, FVM 3.
+Correia T. gioca nel Venezia, ruolo Mantra Dd/E, quotazione 4 crediti, FVM 3.
+Zappa gioca nel Cagliari, ruolo Mantra B/Dd/E, quotazione 4 crediti, FVM 3.
+Walukiewicz gioca nel Sassuolo, ruolo Mantra Dd/Dc, quotazione 4 crediti, FVM 3.
+Delli Carri gioca nel Monza, ruolo Mantra Dc, quotazione 4 crediti, FVM 3.
+Mitaj gioca nel Genoa, ruolo Mantra Ds/E, quotazione 4 crediti, FVM 2.
+Arizala gioca nel Udinese, ruolo Mantra Ds/E, quotazione 4 crediti, FVM 2.
+Pongracic gioca nel Fiorentina, ruolo Mantra Dc, quotazione 4 crediti, FVM 2.
+Kabasele gioca nel Udinese, ruolo Mantra Dc, quotazione 4 crediti, FVM 2.
+Candè gioca nel Sassuolo, ruolo Mantra Ds/Dc, quotazione 3 crediti, FVM 4.
+Kouadio gioca nel Monza, ruolo Mantra Dd/Dc, quotazione 3 crediti, FVM 3.
+Floriani Mussolini gioca nel Lazio, ruolo Mantra Dd/E, quotazione 3 crediti, FVM 3.
+Provstgaard gioca nel Lazio, ruolo Mantra Dc, quotazione 3 crediti, FVM 3.
+Angelino gioca nel Roma, ruolo Mantra E, quotazione 3 crediti, FVM 3.
+Akpoguma gioca nel Frosinone, ruolo Mantra Dc, quotazione 3 crediti, FVM 2.
+Troilo gioca nel Parma, ruolo Mantra Dc, quotazione 3 crediti, FVM 2.
+Athekame gioca nel Milan, ruolo Mantra Dd/E, quotazione 3 crediti, FVM 2.
+Joao Mario gioca nel Fiorentina, ruolo Mantra Dd/E, quotazione 3 crediti, FVM 2.
+Idrissi R. gioca nel Cagliari, ruolo Mantra Ds/E, quotazione 3 crediti, FVM 2.
+Schingtienne gioca nel Venezia, ruolo Mantra Dc, quotazione 3 crediti, FVM 2.
+Hainaut gioca nel Venezia, ruolo Mantra Dd/E, quotazione 3 crediti, FVM 2.
+Sverko gioca nel Venezia, ruolo Mantra Ds/Dc, quotazione 3 crediti, FVM 2.
+Cittadini gioca nel Frosinone, ruolo Mantra Dc, quotazione 3 crediti, FVM 2.
+Kossounou gioca nel Atalanta, ruolo Mantra Dd/Dc, quotazione 3 crediti, FVM 2.
+Casale gioca nel Bologna, ruolo Mantra Dc, quotazione 3 crediti, FVM 2.
+Estupinan gioca nel Milan, ruolo Mantra Ds/E, quotazione 3 crediti, FVM 2.
+Ranieri L. gioca nel Fiorentina, ruolo Mantra Ds/Dc, quotazione 3 crediti, FVM 2.
+Alhassane gioca nel Bologna, ruolo Mantra Ds/E, quotazione 2 crediti, FVM 2.
+Puczka gioca nel Genoa, ruolo Mantra Ds/E, quotazione 2 crediti, FVM 2.
+Marin R. gioca nel Napoli, ruolo Mantra Dc, quotazione 2 crediti, FVM 2.
+Lazzari gioca nel Lazio, ruolo Mantra Dd/E, quotazione 2 crediti, FVM 2.
+Biraghi gioca nel Torino, ruolo Mantra B/Ds/E, quotazione 2 crediti, FVM 2.
+Aurelio gioca nel Cagliari, ruolo Mantra Ds/E, quotazione 2 crediti, FVM 1.
+Diawara S. gioca nel Milan, ruolo Mantra Ds/Dc, quotazione 2 crediti, FVM 1.
+Franjic gioca nel Venezia, ruolo Mantra B/Ds/E, quotazione 2 crediti, FVM 1.
+Helland gioca nel Bologna, ruolo Mantra Dd/Dc, quotazione 2 crediti, FVM 1.
+Otoa gioca nel Genoa, ruolo Mantra Dc, quotazione 2 crediti, FVM 1.
+Palma gioca nel Udinese, ruolo Mantra Dc, quotazione 2 crediti, FVM 1.
+Van Der Brempt gioca nel Como, ruolo Mantra Dd/E, quotazione 2 crediti, FVM 1.
+Jean gioca nel Lecce, ruolo Mantra Dc, quotazione 2 crediti, FVM 1.
+Sagrado gioca nel Venezia, ruolo Mantra Dd/E, quotazione 2 crediti, FVM 1.
+Ebosse gioca nel Udinese, ruolo Mantra Ds/Dc, quotazione 2 crediti, FVM 1.
+Pellegrini Lu. gioca nel Lazio, ruolo Mantra Ds/E, quotazione 2 crediti, FVM 1.
+Sabelli gioca nel Genoa, ruolo Mantra Dd/Ds/E, quotazione 2 crediti, FVM 1.
+Cuenca A. gioca nel Como, ruolo Mantra Ds/Dc, quotazione 1 crediti, FVM 2.
+Bakoune gioca nel Monza, ruolo Mantra Dd/E, quotazione 1 crediti, FVM 1.
+Corrado gioca nel Frosinone, ruolo Mantra Ds/E, quotazione 1 crediti, FVM 1.
+Oyono J. gioca nel Frosinone, ruolo Mantra Dd/E, quotazione 1 crediti, FVM 1.
+Gelli J. gioca nel Frosinone, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Gomes gioca nel Venezia, ruolo Mantra Ds/Dc, quotazione 1 crediti, FVM 1.
+Mlacic gioca nel Udinese, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Raterink gioca nel Cagliari, ruolo Mantra Dd/E, quotazione 1 crediti, FVM 1.
+Ziolkowski gioca nel Roma, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Ndiaye gioca nel Parma, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Ndaba gioca nel Lecce, ruolo Mantra Ds/E, quotazione 1 crediti, FVM 1.
+Perez M. gioca nel Lecce, ruolo Mantra Dd/Dc, quotazione 1 crediti, FVM 1.
+Pieragnolo gioca nel Sassuolo, ruolo Mantra Ds/E, quotazione 1 crediti, FVM 1.
+Marianucci gioca nel Napoli, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Vogliacco gioca nel Genoa, ruolo Mantra Dd/Dc, quotazione 1 crediti, FVM 1.
+Matturro gioca nel Genoa, ruolo Mantra Ds/Dc, quotazione 1 crediti, FVM 1.
+Missori gioca nel Sassuolo, ruolo Mantra Dd/E, quotazione 1 crediti, FVM 1.
+Carboni F. gioca nel Parma, ruolo Mantra Ds/E, quotazione 1 crediti, FVM 1.
+Cabal gioca nel Juventus, ruolo Mantra B/Ds/E, quotazione 1 crediti, FVM 1.
+Abankwah gioca nel Udinese, ruolo Mantra Dd/Dc, quotazione 1 crediti, FVM 1.
+Mazzocchi gioca nel Napoli, ruolo Mantra Dd/Ds/E, quotazione 1 crediti, FVM 1.
+Amey gioca nel Frosinone, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Antov gioca nel Monza, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+De Silvestri gioca nel Bologna, ruolo Mantra Dd/E, quotazione 1 crediti, FVM 1.
+Goldaniga gioca nel Como, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.
+Patric gioca nel Lazio, ruolo Mantra Dd/Dc, quotazione 1 crediti, FVM 1.
+Rugani gioca nel Juventus, ruolo Mantra Dc, quotazione 1 crediti, FVM 1.

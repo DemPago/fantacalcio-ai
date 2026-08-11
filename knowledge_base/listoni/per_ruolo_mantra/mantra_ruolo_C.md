@@ -1,163 +1,161 @@
-# Calciatori Centrocampisti/Ruoli Ibridi — Serie A Fantacalcio Mantra 2026-27
+# Centrocampisti e Ruoli Ibridi — Fantacalcio Mantra 2026-27
 Totale: 158 calciatori
 
-| Nome | Squadra | Ruolo Mantra | Quotazione | FVM |
-|------|---------|-------------|-----------|-----|
-| Dimarco | Inter | E/W | 30 | 66 |
-| Calhanoglu | Inter | M/C | 28 | 65 |
-| McTominay | Napoli | C/T | 28 | 60 |
-| Rabiot | Milan | C/T | 22 | 32 |
-| Baturina | Como | T | 18 | 25 |
-| Da Cunha | Como | C/T | 18 | 23 |
-| Atta | Fiorentina | C/T | 17 | 22 |
-| Barella | Inter | C | 17 | 21 |
-| McKennie | Juventus | C | 17 | 17 |
-| De Bruyne | Napoli | T | 14 | 24 |
-| Vlasic | Torino | T | 13 | 19 |
-| Taylor K. | Lazio | C/T | 13 | 16 |
-| Modric | Milan | M/C | 13 | 15 |
-| Ederson D.S. | Atalanta | M/C | 13 | 12 |
-| Mastantuono | Fiorentina | W/T | 12 | 15 |
-| Alajbegovic | Juventus | W/T | 12 | 14 |
-| Samardzic | Atalanta | C/T | 12 | 11 |
-| Zambo Anguissa | Napoli | C | 11 | 14 |
-| Konè M. | Roma | M/C | 11 | 11 |
-| Saelemaekers | Milan | E/W | 11 | 11 |
-| Rowe | Bologna | W/T | 11 | 10 |
-| Perrone | Como | M/C | 11 | 10 |
-| Ekkelenkamp | Udinese | C/T | 10 | 10 |
-| Thorstvedt | Sassuolo | C/T | 10 | 10 |
-| Thuram K. | Juventus | C | 10 | 10 |
-| Zielinski | Inter | C | 10 | 10 |
-| Casadei | Torino | C/T | 10 | 9 |
-| Baldanzi | Genoa | T | 10 | 7 |
-| Pellegrini Lo. | Roma | C/T | 10 | 7 |
-| Politano | Napoli | W | 9 | 11 |
-| Diouf | Inter | E/C | 9 | 10 |
-| Locatelli | Juventus | M/C | 9 | 9 |
-| Pasalic | Atalanta | C/T | 9 | 8 |
-| Cristante | Roma | M/C | 9 | 8 |
-| Mandragora | Fiorentina | C | 9 | 7 |
-| Fagioli | Fiorentina | M/C | 9 | 6 |
-| Konè I. | Sassuolo | C | 9 | 5 |
-| Bernardeschi | Bologna | W/T | 9 | 5 |
-| Vergara | Napoli | W/T | 8 | 9 |
-| Calò | Frosinone | M/C | 8 | 7 |
-| Sucic P. | Inter | C | 8 | 7 |
-| Gaetano | Atalanta | M/C | 8 | 7 |
-| Ndour | Fiorentina | C | 8 | 6 |
-| Lobotka | Napoli | M/C | 8 | 6 |
-| Pessina | Monza | M/C | 8 | 6 |
-| Fazzini | Cagliari | C/T | 8 | 5 |
-| Ferguson | Bologna | M/C | 8 | 5 |
-| Frendrup | Genoa | M/C | 8 | 5 |
-| Sow | Genoa | M/C | 8 | 4 |
-| Bernabè | Parma | C | 7 | 9 |
-| Oristanio | Torino | W/T | 7 | 7 |
-| Oulai | Fiorentina | M/C | 7 | 6 |
-| Karlstrom | Udinese | M/C | 7 | 6 |
-| Colpani | Monza | T | 7 | 6 |
-| Volpato | Sassuolo | W/T | 7 | 6 |
-| Ellertsson | Genoa | E/C | 7 | 5 |
-| Basic | Venezia | M/C | 7 | 5 |
-| Rovella | Lazio | M/C | 7 | 5 |
-| Nicolussi Caviglia | Parma | M/C | 7 | 5 |
-| Odgaard | Bologna | T | 7 | 5 |
-| Coulibaly L. | Lecce | M/C | 7 | 4 |
-| Pobega | Bologna | M/C | 7 | 4 |
-| Adopo | Cagliari | M/C | 7 | 4 |
-| Winks | Cagliari | M/C | 7 | 4 |
-| Frattesi | Inter | C/T | 7 | 3 |
-| Fofana Y. | Milan | M/C | 6 | 7 |
-| Cacciamani | Torino | E/W | 6 | 5 |
-| Unai Gomez | Udinese | T | 6 | 5 |
-| Caqueret | Como | C/T | 6 | 5 |
-| Amondarain | Bologna | M/C | 6 | 4 |
-| Romano | Cagliari | M/C | 6 | 4 |
-| Piotrowski | Udinese | M/C | 6 | 4 |
-| Keita M. | Parma | M/C | 6 | 4 |
-| Akinsanmiro | Monza | C | 6 | 4 |
-| Gineitis | Torino | M/C | 6 | 4 |
-| Busio | Venezia | M/C | 6 | 4 |
-| Matic | Sassuolo | M/C | 6 | 4 |
-| Liberali | Como | T | 5 | 5 |
-| El Aynaoui | Roma | M/C | 5 | 5 |
-| Zalewski | Atalanta | W | 5 | 5 |
-| Mkhitaryan | Inter | C | 5 | 5 |
-| Fitz-Jim | Torino | M/C | 5 | 4 |
-| Milla | Como | M/C | 5 | 4 |
-| Meichtry | Genoa | W/T | 5 | 4 |
-| Gandelman | Lecce | C/T | 5 | 4 |
-| Bakola | Sassuolo | C/T | 5 | 4 |
-| Perez K. | Venezia | C/T | 5 | 4 |
-| Adzic | Sassuolo | C/T | 5 | 4 |
-| Pierotti | Lecce | W | 5 | 4 |
-| Pisilli | Roma | C | 5 | 4 |
-| Berisha M. | Lecce | C/T | 5 | 4 |
-| Zhegrova | Juventus | W | 5 | 4 |
-| Koopmeiners | Juventus | C/T | 5 | 4 |
-| Sohm | Venezia | C | 5 | 4 |
-| Luis Henrique | Inter | E/W | 5 | 4 |
-| Cataldi | Lazio | M/C | 5 | 4 |
-| De Roon | Atalanta | M/C | 5 | 4 |
-| Amorim | Genoa | M/C | 5 | 3 |
-| Ngom | Lecce | M/C | 5 | 3 |
-| Dele-Bashiru | Lazio | C/T | 5 | 3 |
-| Ilkhan | Torino | M/C | 5 | 3 |
-| Traorè Hj. | Genoa | W/T | 5 | 3 |
-| Chukwueze | Milan | W | 5 | 2 |
-| Koutsoupias | Frosinone | C | 4 | 3 |
-| Cichella | Frosinone | M/C | 4 | 3 |
-| Jashari | Milan | C | 4 | 3 |
-| Folorunsho | Napoli | C/T | 4 | 3 |
-| Moro N. | Bologna | M/C | 4 | 3 |
-| Zerbin | Frosinone | W | 4 | 3 |
-| Ricci S. | Milan | M/C | 4 | 3 |
-| Douglas Luiz | Juventus | C | 4 | 3 |
-| Loftus-Cheek | Milan | C/T | 4 | 3 |
-| Felici | Cagliari | W | 4 | 2 |
-| Prati | Cagliari | M/C | 4 | 2 |
-| Fabbian | Fiorentina | C/T | 4 | 2 |
-| Miller L. | Udinese | M/C | 3 | 4 |
-| Sorensen O. | Parma | C | 3 | 3 |
-| Stankovic A. | Inter | M/C | 3 | 3 |
-| Miretti | Juventus | C/T | 3 | 3 |
-| Colombo L. | Monza | M/C | 3 | 2 |
-| Gelli F. | Frosinone | C/T | 3 | 2 |
-| Sulemana I. | Atalanta | M/C | 3 | 2 |
-| Helgason | Venezia | C/T | 3 | 2 |
-| Gilmour | Napoli | M/C | 3 | 2 |
-| Messias | Genoa | W/T | 3 | 2 |
-| Brescianini | Fiorentina | C/T | 3 | 2 |
-| Deiola | Cagliari | M/C | 3 | 2 |
-| Chakvetadze | Udinese | W/T | 2 | 2 |
-| Ordonez C. | Parma | M/C | 2 | 2 |
-| Fini  | Frosinone | W | 2 | 2 |
-| Ciurria | Monza | E/W | 2 | 2 |
-| Musah | Milan | C/W | 2 | 2 |
-| Venturino | Genoa | W | 2 | 1 |
-| Masini | Frosinone | M/C | 2 | 1 |
-| Hasa | Frosinone | C/T | 2 | 1 |
-| Fadera | Como | W | 2 | 1 |
-| Lipani | Sassuolo | M/C | 2 | 1 |
-| El Azzouzi O. | Bologna | M/C | 2 | 1 |
-| Boloca | Sassuolo | M/C | 2 | 1 |
-| Maleh | Lecce | M/C | 2 | 1 |
-| Duncan | Venezia | C | 2 | 1 |
-| Dagasso | Venezia | C | 1 | 1 |
-| El Azzouzi A. | Frosinone | M/C | 1 | 1 |
-| Camara A. | Udinese | M/C | 1 | 1 |
-| Lahdo | Como | C/T | 1 | 1 |
-| Przyborek | Lazio | W/T | 1 | 1 |
-| Fofana Sa. | Lecce | M/C | 1 | 1 |
-| Cremaschi | Parma | E/C | 1 | 1 |
-| Gorter | Lecce | M/C | 1 | 1 |
-| Liteta | Cagliari | M/C | 1 | 1 |
-| Iannoni | Sassuolo | M/C | 1 | 1 |
-| Anjorin | Torino | C/T | 1 | 1 |
-| Kaba | Lecce | M/C | 1 | 1 |
-| Zarraga | Udinese | M/C | 1 | 1 |
-| Belahyane | Lazio | M/C | 1 | 1 |
-| Kone B. | Frosinone | C | 1 | 1 |
-| Bjarkason | Venezia | E/W | 1 | 1 |
-| Ilic | Torino | C | 1 | 1 |
+Dimarco gioca nel Inter, ruolo Mantra E/W, quotazione 30 crediti, FVM 66.
+Calhanoglu gioca nel Inter, ruolo Mantra M/C, quotazione 28 crediti, FVM 65.
+McTominay gioca nel Napoli, ruolo Mantra C/T, quotazione 28 crediti, FVM 60.
+Rabiot gioca nel Milan, ruolo Mantra C/T, quotazione 22 crediti, FVM 32.
+Baturina gioca nel Como, ruolo Mantra T, quotazione 18 crediti, FVM 25.
+Da Cunha gioca nel Como, ruolo Mantra C/T, quotazione 18 crediti, FVM 23.
+Atta gioca nel Fiorentina, ruolo Mantra C/T, quotazione 17 crediti, FVM 22.
+Barella gioca nel Inter, ruolo Mantra C, quotazione 17 crediti, FVM 21.
+McKennie gioca nel Juventus, ruolo Mantra C, quotazione 17 crediti, FVM 17.
+De Bruyne gioca nel Napoli, ruolo Mantra T, quotazione 14 crediti, FVM 24.
+Vlasic gioca nel Torino, ruolo Mantra T, quotazione 13 crediti, FVM 19.
+Taylor K. gioca nel Lazio, ruolo Mantra C/T, quotazione 13 crediti, FVM 16.
+Modric gioca nel Milan, ruolo Mantra M/C, quotazione 13 crediti, FVM 15.
+Ederson D.S. gioca nel Atalanta, ruolo Mantra M/C, quotazione 13 crediti, FVM 12.
+Mastantuono gioca nel Fiorentina, ruolo Mantra W/T, quotazione 12 crediti, FVM 15.
+Alajbegovic gioca nel Juventus, ruolo Mantra W/T, quotazione 12 crediti, FVM 14.
+Samardzic gioca nel Atalanta, ruolo Mantra C/T, quotazione 12 crediti, FVM 11.
+Zambo Anguissa gioca nel Napoli, ruolo Mantra C, quotazione 11 crediti, FVM 14.
+Konè M. gioca nel Roma, ruolo Mantra M/C, quotazione 11 crediti, FVM 11.
+Saelemaekers gioca nel Milan, ruolo Mantra E/W, quotazione 11 crediti, FVM 11.
+Rowe gioca nel Bologna, ruolo Mantra W/T, quotazione 11 crediti, FVM 10.
+Perrone gioca nel Como, ruolo Mantra M/C, quotazione 11 crediti, FVM 10.
+Ekkelenkamp gioca nel Udinese, ruolo Mantra C/T, quotazione 10 crediti, FVM 10.
+Thorstvedt gioca nel Sassuolo, ruolo Mantra C/T, quotazione 10 crediti, FVM 10.
+Thuram K. gioca nel Juventus, ruolo Mantra C, quotazione 10 crediti, FVM 10.
+Zielinski gioca nel Inter, ruolo Mantra C, quotazione 10 crediti, FVM 10.
+Casadei gioca nel Torino, ruolo Mantra C/T, quotazione 10 crediti, FVM 9.
+Baldanzi gioca nel Genoa, ruolo Mantra T, quotazione 10 crediti, FVM 7.
+Pellegrini Lo. gioca nel Roma, ruolo Mantra C/T, quotazione 10 crediti, FVM 7.
+Politano gioca nel Napoli, ruolo Mantra W, quotazione 9 crediti, FVM 11.
+Diouf gioca nel Inter, ruolo Mantra E/C, quotazione 9 crediti, FVM 10.
+Locatelli gioca nel Juventus, ruolo Mantra M/C, quotazione 9 crediti, FVM 9.
+Pasalic gioca nel Atalanta, ruolo Mantra C/T, quotazione 9 crediti, FVM 8.
+Cristante gioca nel Roma, ruolo Mantra M/C, quotazione 9 crediti, FVM 8.
+Mandragora gioca nel Fiorentina, ruolo Mantra C, quotazione 9 crediti, FVM 7.
+Fagioli gioca nel Fiorentina, ruolo Mantra M/C, quotazione 9 crediti, FVM 6.
+Konè I. gioca nel Sassuolo, ruolo Mantra C, quotazione 9 crediti, FVM 5.
+Bernardeschi gioca nel Bologna, ruolo Mantra W/T, quotazione 9 crediti, FVM 5.
+Vergara gioca nel Napoli, ruolo Mantra W/T, quotazione 8 crediti, FVM 9.
+Calò gioca nel Frosinone, ruolo Mantra M/C, quotazione 8 crediti, FVM 7.
+Sucic P. gioca nel Inter, ruolo Mantra C, quotazione 8 crediti, FVM 7.
+Gaetano gioca nel Atalanta, ruolo Mantra M/C, quotazione 8 crediti, FVM 7.
+Ndour gioca nel Fiorentina, ruolo Mantra C, quotazione 8 crediti, FVM 6.
+Lobotka gioca nel Napoli, ruolo Mantra M/C, quotazione 8 crediti, FVM 6.
+Pessina gioca nel Monza, ruolo Mantra M/C, quotazione 8 crediti, FVM 6.
+Fazzini gioca nel Cagliari, ruolo Mantra C/T, quotazione 8 crediti, FVM 5.
+Ferguson gioca nel Bologna, ruolo Mantra M/C, quotazione 8 crediti, FVM 5.
+Frendrup gioca nel Genoa, ruolo Mantra M/C, quotazione 8 crediti, FVM 5.
+Sow gioca nel Genoa, ruolo Mantra M/C, quotazione 8 crediti, FVM 4.
+Bernabè gioca nel Parma, ruolo Mantra C, quotazione 7 crediti, FVM 9.
+Oristanio gioca nel Torino, ruolo Mantra W/T, quotazione 7 crediti, FVM 7.
+Oulai gioca nel Fiorentina, ruolo Mantra M/C, quotazione 7 crediti, FVM 6.
+Karlstrom gioca nel Udinese, ruolo Mantra M/C, quotazione 7 crediti, FVM 6.
+Colpani gioca nel Monza, ruolo Mantra T, quotazione 7 crediti, FVM 6.
+Volpato gioca nel Sassuolo, ruolo Mantra W/T, quotazione 7 crediti, FVM 6.
+Ellertsson gioca nel Genoa, ruolo Mantra E/C, quotazione 7 crediti, FVM 5.
+Basic gioca nel Venezia, ruolo Mantra M/C, quotazione 7 crediti, FVM 5.
+Rovella gioca nel Lazio, ruolo Mantra M/C, quotazione 7 crediti, FVM 5.
+Nicolussi Caviglia gioca nel Parma, ruolo Mantra M/C, quotazione 7 crediti, FVM 5.
+Odgaard gioca nel Bologna, ruolo Mantra T, quotazione 7 crediti, FVM 5.
+Coulibaly L. gioca nel Lecce, ruolo Mantra M/C, quotazione 7 crediti, FVM 4.
+Pobega gioca nel Bologna, ruolo Mantra M/C, quotazione 7 crediti, FVM 4.
+Adopo gioca nel Cagliari, ruolo Mantra M/C, quotazione 7 crediti, FVM 4.
+Winks gioca nel Cagliari, ruolo Mantra M/C, quotazione 7 crediti, FVM 4.
+Frattesi gioca nel Inter, ruolo Mantra C/T, quotazione 7 crediti, FVM 3.
+Fofana Y. gioca nel Milan, ruolo Mantra M/C, quotazione 6 crediti, FVM 7.
+Cacciamani gioca nel Torino, ruolo Mantra E/W, quotazione 6 crediti, FVM 5.
+Unai Gomez gioca nel Udinese, ruolo Mantra T, quotazione 6 crediti, FVM 5.
+Caqueret gioca nel Como, ruolo Mantra C/T, quotazione 6 crediti, FVM 5.
+Amondarain gioca nel Bologna, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Romano gioca nel Cagliari, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Piotrowski gioca nel Udinese, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Keita M. gioca nel Parma, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Akinsanmiro gioca nel Monza, ruolo Mantra C, quotazione 6 crediti, FVM 4.
+Gineitis gioca nel Torino, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Busio gioca nel Venezia, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Matic gioca nel Sassuolo, ruolo Mantra M/C, quotazione 6 crediti, FVM 4.
+Liberali gioca nel Como, ruolo Mantra T, quotazione 5 crediti, FVM 5.
+El Aynaoui gioca nel Roma, ruolo Mantra M/C, quotazione 5 crediti, FVM 5.
+Zalewski gioca nel Atalanta, ruolo Mantra W, quotazione 5 crediti, FVM 5.
+Mkhitaryan gioca nel Inter, ruolo Mantra C, quotazione 5 crediti, FVM 5.
+Fitz-Jim gioca nel Torino, ruolo Mantra M/C, quotazione 5 crediti, FVM 4.
+Milla gioca nel Como, ruolo Mantra M/C, quotazione 5 crediti, FVM 4.
+Meichtry gioca nel Genoa, ruolo Mantra W/T, quotazione 5 crediti, FVM 4.
+Gandelman gioca nel Lecce, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Bakola gioca nel Sassuolo, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Perez K. gioca nel Venezia, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Adzic gioca nel Sassuolo, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Pierotti gioca nel Lecce, ruolo Mantra W, quotazione 5 crediti, FVM 4.
+Pisilli gioca nel Roma, ruolo Mantra C, quotazione 5 crediti, FVM 4.
+Berisha M. gioca nel Lecce, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Zhegrova gioca nel Juventus, ruolo Mantra W, quotazione 5 crediti, FVM 4.
+Koopmeiners gioca nel Juventus, ruolo Mantra C/T, quotazione 5 crediti, FVM 4.
+Sohm gioca nel Venezia, ruolo Mantra C, quotazione 5 crediti, FVM 4.
+Luis Henrique gioca nel Inter, ruolo Mantra E/W, quotazione 5 crediti, FVM 4.
+Cataldi gioca nel Lazio, ruolo Mantra M/C, quotazione 5 crediti, FVM 4.
+De Roon gioca nel Atalanta, ruolo Mantra M/C, quotazione 5 crediti, FVM 4.
+Amorim gioca nel Genoa, ruolo Mantra M/C, quotazione 5 crediti, FVM 3.
+Ngom gioca nel Lecce, ruolo Mantra M/C, quotazione 5 crediti, FVM 3.
+Dele-Bashiru gioca nel Lazio, ruolo Mantra C/T, quotazione 5 crediti, FVM 3.
+Ilkhan gioca nel Torino, ruolo Mantra M/C, quotazione 5 crediti, FVM 3.
+Traorè Hj. gioca nel Genoa, ruolo Mantra W/T, quotazione 5 crediti, FVM 3.
+Chukwueze gioca nel Milan, ruolo Mantra W, quotazione 5 crediti, FVM 2.
+Koutsoupias gioca nel Frosinone, ruolo Mantra C, quotazione 4 crediti, FVM 3.
+Cichella gioca nel Frosinone, ruolo Mantra M/C, quotazione 4 crediti, FVM 3.
+Jashari gioca nel Milan, ruolo Mantra C, quotazione 4 crediti, FVM 3.
+Folorunsho gioca nel Napoli, ruolo Mantra C/T, quotazione 4 crediti, FVM 3.
+Moro N. gioca nel Bologna, ruolo Mantra M/C, quotazione 4 crediti, FVM 3.
+Zerbin gioca nel Frosinone, ruolo Mantra W, quotazione 4 crediti, FVM 3.
+Ricci S. gioca nel Milan, ruolo Mantra M/C, quotazione 4 crediti, FVM 3.
+Douglas Luiz gioca nel Juventus, ruolo Mantra C, quotazione 4 crediti, FVM 3.
+Loftus-Cheek gioca nel Milan, ruolo Mantra C/T, quotazione 4 crediti, FVM 3.
+Felici gioca nel Cagliari, ruolo Mantra W, quotazione 4 crediti, FVM 2.
+Prati gioca nel Cagliari, ruolo Mantra M/C, quotazione 4 crediti, FVM 2.
+Fabbian gioca nel Fiorentina, ruolo Mantra C/T, quotazione 4 crediti, FVM 2.
+Miller L. gioca nel Udinese, ruolo Mantra M/C, quotazione 3 crediti, FVM 4.
+Sorensen O. gioca nel Parma, ruolo Mantra C, quotazione 3 crediti, FVM 3.
+Stankovic A. gioca nel Inter, ruolo Mantra M/C, quotazione 3 crediti, FVM 3.
+Miretti gioca nel Juventus, ruolo Mantra C/T, quotazione 3 crediti, FVM 3.
+Colombo L. gioca nel Monza, ruolo Mantra M/C, quotazione 3 crediti, FVM 2.
+Gelli F. gioca nel Frosinone, ruolo Mantra C/T, quotazione 3 crediti, FVM 2.
+Sulemana I. gioca nel Atalanta, ruolo Mantra M/C, quotazione 3 crediti, FVM 2.
+Helgason gioca nel Venezia, ruolo Mantra C/T, quotazione 3 crediti, FVM 2.
+Gilmour gioca nel Napoli, ruolo Mantra M/C, quotazione 3 crediti, FVM 2.
+Messias gioca nel Genoa, ruolo Mantra W/T, quotazione 3 crediti, FVM 2.
+Brescianini gioca nel Fiorentina, ruolo Mantra C/T, quotazione 3 crediti, FVM 2.
+Deiola gioca nel Cagliari, ruolo Mantra M/C, quotazione 3 crediti, FVM 2.
+Chakvetadze gioca nel Udinese, ruolo Mantra W/T, quotazione 2 crediti, FVM 2.
+Ordonez C. gioca nel Parma, ruolo Mantra M/C, quotazione 2 crediti, FVM 2.
+Fini gioca nel Frosinone, ruolo Mantra W, quotazione 2 crediti, FVM 2.
+Ciurria gioca nel Monza, ruolo Mantra E/W, quotazione 2 crediti, FVM 2.
+Musah gioca nel Milan, ruolo Mantra C/W, quotazione 2 crediti, FVM 2.
+Venturino gioca nel Genoa, ruolo Mantra W, quotazione 2 crediti, FVM 1.
+Masini gioca nel Frosinone, ruolo Mantra M/C, quotazione 2 crediti, FVM 1.
+Hasa gioca nel Frosinone, ruolo Mantra C/T, quotazione 2 crediti, FVM 1.
+Fadera gioca nel Como, ruolo Mantra W, quotazione 2 crediti, FVM 1.
+Lipani gioca nel Sassuolo, ruolo Mantra M/C, quotazione 2 crediti, FVM 1.
+El Azzouzi O. gioca nel Bologna, ruolo Mantra M/C, quotazione 2 crediti, FVM 1.
+Boloca gioca nel Sassuolo, ruolo Mantra M/C, quotazione 2 crediti, FVM 1.
+Maleh gioca nel Lecce, ruolo Mantra M/C, quotazione 2 crediti, FVM 1.
+Duncan gioca nel Venezia, ruolo Mantra C, quotazione 2 crediti, FVM 1.
+Dagasso gioca nel Venezia, ruolo Mantra C, quotazione 1 crediti, FVM 1.
+El Azzouzi A. gioca nel Frosinone, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Camara A. gioca nel Udinese, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Lahdo gioca nel Como, ruolo Mantra C/T, quotazione 1 crediti, FVM 1.
+Przyborek gioca nel Lazio, ruolo Mantra W/T, quotazione 1 crediti, FVM 1.
+Fofana Sa. gioca nel Lecce, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Cremaschi gioca nel Parma, ruolo Mantra E/C, quotazione 1 crediti, FVM 1.
+Gorter gioca nel Lecce, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Liteta gioca nel Cagliari, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Iannoni gioca nel Sassuolo, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Anjorin gioca nel Torino, ruolo Mantra C/T, quotazione 1 crediti, FVM 1.
+Kaba gioca nel Lecce, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Zarraga gioca nel Udinese, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Belahyane gioca nel Lazio, ruolo Mantra M/C, quotazione 1 crediti, FVM 1.
+Kone B. gioca nel Frosinone, ruolo Mantra C, quotazione 1 crediti, FVM 1.
+Bjarkason gioca nel Venezia, ruolo Mantra E/W, quotazione 1 crediti, FVM 1.
+Ilic gioca nel Torino, ruolo Mantra C, quotazione 1 crediti, FVM 1.

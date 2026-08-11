@@ -1,93 +1,91 @@
-# Calciatori ruolo A — Serie A Fantacalcio Classic 2026-27
+# Attaccanti — Fantacalcio Classic 2026-27
 Totale: 88 calciatori
 
-| Nome | Squadra | Quotazione | FVM |
-|------|---------|-----------|-----|
-| Martinez L. | Inter | 35 | 93 |
-| Malen | Roma | 34 | 91 |
-| Thuram | Inter | 29 | 70 |
-| Hojlund | Napoli | 28 | 68 |
-| Ramos G. | Milan | 27 | 60 |
-| Kolo Muani | Juventus | 26 | 56 |
-| Kean | Fiorentina | 25 | 53 |
-| Yildiz | Juventus | 23 | 50 |
-| Douvikas | Como | 20 | 39 |
-| Scamacca | Atalanta | 19 | 32 |
-| Davis K. | Udinese | 19 | 30 |
-| Leao | Milan | 18 | 30 |
-| Berardi | Sassuolo | 18 | 29 |
-| Krstovic | Atalanta | 18 | 25 |
-| De Ketelaere | Atalanta | 17 | 27 |
-| Esposito F.P. | Inter | 16 | 23 |
-| Dovbyk | Bologna | 16 | 21 |
-| Laurientè | Sassuolo | 15 | 22 |
-| Simeone | Torino | 15 | 21 |
-| Pellegrino M. | Parma | 15 | 20 |
-| Castro S. | Roma | 14 | 21 |
-| Dybala | Roma | 14 | 17 |
-| Santos A. | Napoli | 14 | 15 |
-| Raspadori | Atalanta | 13 | 16 |
-| Pinamonti | Sassuolo | 13 | 15 |
-| Nkunku | Milan | 13 | 13 |
-| Esposito Se. | Cagliari | 13 | 13 |
-| Kevin Carlos | Cagliari | 13 | 12 |
-| Soulè | Roma | 12 | 14 |
-| Adams A. | Venezia | 12 | 13 |
-| Colombo | Genoa | 11 | 16 |
-| Diao | Como | 11 | 13 |
-| Tourè E. | Parma | 11 | 11 |
-| Lukaku | Napoli | 10 | 11 |
-| Bowie | Sassuolo | 10 | 10 |
-| Ratkov | Lazio | 10 | 8 |
-| Dia | Lazio | 10 | 8 |
-| David | Juventus | 9 | 10 |
-| Adams C. | Torino | 9 | 8 |
-| Ghedjemis | Frosinone | 9 | 8 |
-| Cutrone | Monza | 9 | 8 |
-| Geubbels | Lecce | 9 | 6 |
-| Yeboah J. | Venezia | 8 | 7 |
-| Dallinga | Bologna | 8 | 6 |
-| Piccoli | Fiorentina | 8 | 6 |
-| Rrahmani Al. | Venezia | 8 | 5 |
-| Vitinha O. | Genoa | 8 | 5 |
-| Raimondo | Frosinone | 7 | 6 |
-| Stulic | Lecce | 7 | 5 |
-| Bonny | Inter | 7 | 5 |
-| Zapata D. | Torino | 7 | 5 |
-| Neres | Napoli | 6 | 6 |
-| Boga | Juventus | 6 | 6 |
-| Mutandwa | Cagliari | 6 | 5 |
-| Gimenez | Milan | 6 | 4 |
-| Noslin | Lazio | 6 | 4 |
-| Sulemana K. | Atalanta | 6 | 4 |
-| Camarda | Milan | 5 | 5 |
-| Mota | Monza | 5 | 5 |
-| Maldini | Cagliari | 5 | 4 |
-| Adorante | Venezia | 5 | 4 |
-| Frigan | Parma | 5 | 3 |
-| Kvernadze | Frosinone | 4 | 4 |
-| Robinson J. | Monza | 4 | 3 |
-| Giovane | Napoli | 4 | 3 |
-| Morata | Como | 4 | 3 |
-| Havel | Genoa | 4 | 2 |
-| Mendy P. | Cagliari | 4 | 2 |
-| Kulenovic | Torino | 4 | 2 |
-| Gueye | Udinese | 4 | 2 |
-| Borrelli | Cagliari | 4 | 2 |
-| Elphege | Parma | 3 | 3 |
-| Lang | Napoli | 3 | 3 |
-| Ekhator | Juventus | 3 | 3 |
-| Lucca | Napoli | 3 | 3 |
-| Varela G. | Monza | 3 | 2 |
-| N'Dri | Lecce | 3 | 2 |
-| Kuhn | Como | 3 | 1 |
-| Buksa | Udinese | 2 | 1 |
-| Petagna | Monza | 2 | 1 |
-| Lauberbach | Venezia | 1 | 1 |
-| Lisman | Venezia | 1 | 1 |
-| Albarracin | Cagliari | 1 | 1 |
-| Trepy | Cagliari | 1 | 1 |
-| Bayo V. | Udinese | 1 | 1 |
-| Moro L. | Sassuolo | 1 | 1 |
-| Azon | Como | 1 | 1 |
-| Vaz | Roma | 1 | 1 |
+Martinez L. gioca nel Inter, ruolo Attaccanti, quotazione 35 crediti, FVM 93.
+Malen gioca nel Roma, ruolo Attaccanti, quotazione 34 crediti, FVM 91.
+Thuram gioca nel Inter, ruolo Attaccanti, quotazione 29 crediti, FVM 70.
+Hojlund gioca nel Napoli, ruolo Attaccanti, quotazione 28 crediti, FVM 68.
+Ramos G. gioca nel Milan, ruolo Attaccanti, quotazione 27 crediti, FVM 60.
+Kolo Muani gioca nel Juventus, ruolo Attaccanti, quotazione 26 crediti, FVM 56.
+Kean gioca nel Fiorentina, ruolo Attaccanti, quotazione 25 crediti, FVM 53.
+Yildiz gioca nel Juventus, ruolo Attaccanti, quotazione 23 crediti, FVM 50.
+Douvikas gioca nel Como, ruolo Attaccanti, quotazione 20 crediti, FVM 39.
+Scamacca gioca nel Atalanta, ruolo Attaccanti, quotazione 19 crediti, FVM 32.
+Davis K. gioca nel Udinese, ruolo Attaccanti, quotazione 19 crediti, FVM 30.
+Leao gioca nel Milan, ruolo Attaccanti, quotazione 18 crediti, FVM 30.
+Berardi gioca nel Sassuolo, ruolo Attaccanti, quotazione 18 crediti, FVM 29.
+Krstovic gioca nel Atalanta, ruolo Attaccanti, quotazione 18 crediti, FVM 25.
+De Ketelaere gioca nel Atalanta, ruolo Attaccanti, quotazione 17 crediti, FVM 27.
+Esposito F.P. gioca nel Inter, ruolo Attaccanti, quotazione 16 crediti, FVM 23.
+Dovbyk gioca nel Bologna, ruolo Attaccanti, quotazione 16 crediti, FVM 21.
+Laurientè gioca nel Sassuolo, ruolo Attaccanti, quotazione 15 crediti, FVM 22.
+Simeone gioca nel Torino, ruolo Attaccanti, quotazione 15 crediti, FVM 21.
+Pellegrino M. gioca nel Parma, ruolo Attaccanti, quotazione 15 crediti, FVM 20.
+Castro S. gioca nel Roma, ruolo Attaccanti, quotazione 14 crediti, FVM 21.
+Dybala gioca nel Roma, ruolo Attaccanti, quotazione 14 crediti, FVM 17.
+Santos A. gioca nel Napoli, ruolo Attaccanti, quotazione 14 crediti, FVM 15.
+Raspadori gioca nel Atalanta, ruolo Attaccanti, quotazione 13 crediti, FVM 16.
+Pinamonti gioca nel Sassuolo, ruolo Attaccanti, quotazione 13 crediti, FVM 15.
+Nkunku gioca nel Milan, ruolo Attaccanti, quotazione 13 crediti, FVM 13.
+Esposito Se. gioca nel Cagliari, ruolo Attaccanti, quotazione 13 crediti, FVM 13.
+Kevin Carlos gioca nel Cagliari, ruolo Attaccanti, quotazione 13 crediti, FVM 12.
+Soulè gioca nel Roma, ruolo Attaccanti, quotazione 12 crediti, FVM 14.
+Adams A. gioca nel Venezia, ruolo Attaccanti, quotazione 12 crediti, FVM 13.
+Colombo gioca nel Genoa, ruolo Attaccanti, quotazione 11 crediti, FVM 16.
+Diao gioca nel Como, ruolo Attaccanti, quotazione 11 crediti, FVM 13.
+Tourè E. gioca nel Parma, ruolo Attaccanti, quotazione 11 crediti, FVM 11.
+Lukaku gioca nel Napoli, ruolo Attaccanti, quotazione 10 crediti, FVM 11.
+Bowie gioca nel Sassuolo, ruolo Attaccanti, quotazione 10 crediti, FVM 10.
+Ratkov gioca nel Lazio, ruolo Attaccanti, quotazione 10 crediti, FVM 8.
+Dia gioca nel Lazio, ruolo Attaccanti, quotazione 10 crediti, FVM 8.
+David gioca nel Juventus, ruolo Attaccanti, quotazione 9 crediti, FVM 10.
+Adams C. gioca nel Torino, ruolo Attaccanti, quotazione 9 crediti, FVM 8.
+Ghedjemis gioca nel Frosinone, ruolo Attaccanti, quotazione 9 crediti, FVM 8.
+Cutrone gioca nel Monza, ruolo Attaccanti, quotazione 9 crediti, FVM 8.
+Geubbels gioca nel Lecce, ruolo Attaccanti, quotazione 9 crediti, FVM 6.
+Yeboah J. gioca nel Venezia, ruolo Attaccanti, quotazione 8 crediti, FVM 7.
+Dallinga gioca nel Bologna, ruolo Attaccanti, quotazione 8 crediti, FVM 6.
+Piccoli gioca nel Fiorentina, ruolo Attaccanti, quotazione 8 crediti, FVM 6.
+Rrahmani Al. gioca nel Venezia, ruolo Attaccanti, quotazione 8 crediti, FVM 5.
+Vitinha O. gioca nel Genoa, ruolo Attaccanti, quotazione 8 crediti, FVM 5.
+Raimondo gioca nel Frosinone, ruolo Attaccanti, quotazione 7 crediti, FVM 6.
+Stulic gioca nel Lecce, ruolo Attaccanti, quotazione 7 crediti, FVM 5.
+Bonny gioca nel Inter, ruolo Attaccanti, quotazione 7 crediti, FVM 5.
+Zapata D. gioca nel Torino, ruolo Attaccanti, quotazione 7 crediti, FVM 5.
+Neres gioca nel Napoli, ruolo Attaccanti, quotazione 6 crediti, FVM 6.
+Boga gioca nel Juventus, ruolo Attaccanti, quotazione 6 crediti, FVM 6.
+Mutandwa gioca nel Cagliari, ruolo Attaccanti, quotazione 6 crediti, FVM 5.
+Gimenez gioca nel Milan, ruolo Attaccanti, quotazione 6 crediti, FVM 4.
+Noslin gioca nel Lazio, ruolo Attaccanti, quotazione 6 crediti, FVM 4.
+Sulemana K. gioca nel Atalanta, ruolo Attaccanti, quotazione 6 crediti, FVM 4.
+Camarda gioca nel Milan, ruolo Attaccanti, quotazione 5 crediti, FVM 5.
+Mota gioca nel Monza, ruolo Attaccanti, quotazione 5 crediti, FVM 5.
+Maldini gioca nel Cagliari, ruolo Attaccanti, quotazione 5 crediti, FVM 4.
+Adorante gioca nel Venezia, ruolo Attaccanti, quotazione 5 crediti, FVM 4.
+Frigan gioca nel Parma, ruolo Attaccanti, quotazione 5 crediti, FVM 3.
+Kvernadze gioca nel Frosinone, ruolo Attaccanti, quotazione 4 crediti, FVM 4.
+Robinson J. gioca nel Monza, ruolo Attaccanti, quotazione 4 crediti, FVM 3.
+Giovane gioca nel Napoli, ruolo Attaccanti, quotazione 4 crediti, FVM 3.
+Morata gioca nel Como, ruolo Attaccanti, quotazione 4 crediti, FVM 3.
+Havel gioca nel Genoa, ruolo Attaccanti, quotazione 4 crediti, FVM 2.
+Mendy P. gioca nel Cagliari, ruolo Attaccanti, quotazione 4 crediti, FVM 2.
+Kulenovic gioca nel Torino, ruolo Attaccanti, quotazione 4 crediti, FVM 2.
+Gueye gioca nel Udinese, ruolo Attaccanti, quotazione 4 crediti, FVM 2.
+Borrelli gioca nel Cagliari, ruolo Attaccanti, quotazione 4 crediti, FVM 2.
+Elphege gioca nel Parma, ruolo Attaccanti, quotazione 3 crediti, FVM 3.
+Lang gioca nel Napoli, ruolo Attaccanti, quotazione 3 crediti, FVM 3.
+Ekhator gioca nel Juventus, ruolo Attaccanti, quotazione 3 crediti, FVM 3.
+Lucca gioca nel Napoli, ruolo Attaccanti, quotazione 3 crediti, FVM 3.
+Varela G. gioca nel Monza, ruolo Attaccanti, quotazione 3 crediti, FVM 2.
+N'Dri gioca nel Lecce, ruolo Attaccanti, quotazione 3 crediti, FVM 2.
+Kuhn gioca nel Como, ruolo Attaccanti, quotazione 3 crediti, FVM 1.
+Buksa gioca nel Udinese, ruolo Attaccanti, quotazione 2 crediti, FVM 1.
+Petagna gioca nel Monza, ruolo Attaccanti, quotazione 2 crediti, FVM 1.
+Lauberbach gioca nel Venezia, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Lisman gioca nel Venezia, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Albarracin gioca nel Cagliari, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Trepy gioca nel Cagliari, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Bayo V. gioca nel Udinese, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Moro L. gioca nel Sassuolo, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Azon gioca nel Como, ruolo Attaccanti, quotazione 1 crediti, FVM 1.
+Vaz gioca nel Roma, ruolo Attaccanti, quotazione 1 crediti, FVM 1.

@@ -1,185 +1,183 @@
-# Calciatori ruolo D — Serie A Fantacalcio Classic 2026-27
+# Difensori — Fantacalcio Classic 2026-27
 Totale: 180 calciatori
 
-| Nome | Squadra | Quotazione | FVM |
-|------|---------|-----------|-----|
-| Dimarco | Inter | 32 | 66 |
-| Wesley | Roma | 17 | 21 |
-| Akanji | Inter | 16 | 14 |
-| Bremer | Juventus | 15 | 13 |
-| Mancini | Roma | 15 | 12 |
-| Pavlovic | Milan | 14 | 12 |
-| Rrahmani | Napoli | 14 | 12 |
-| Bastoni | Inter | 14 | 11 |
-| Solet | Udinese | 13 | 12 |
-| Kalulu | Juventus | 13 | 12 |
-| N'Dicka | Roma | 13 | 11 |
-| Di Lorenzo | Napoli | 12 | 10 |
-| Stones | Inter | 12 | 10 |
-| Gila | Milan | 12 | 8 |
-| Ostigard | Genoa | 11 | 10 |
-| Bisseck | Inter | 11 | 8 |
-| Ramon | Como | 10 | 8 |
-| Dodò | Fiorentina | 10 | 8 |
-| Scalvini | Atalanta | 10 | 7 |
-| Hermoso | Roma | 10 | 7 |
-| Vasquez | Genoa | 9 | 8 |
-| Chalobah T. | Como | 9 | 7 |
-| Cambiaso | Juventus | 9 | 7 |
-| Couto | Como | 8 | 7 |
-| Gutierrez | Napoli | 8 | 7 |
-| Dragusin | Fiorentina | 8 | 7 |
-| Norton-Cuffy | Genoa | 8 | 6 |
-| Jimenez A. | Fiorentina | 8 | 6 |
-| Bartesaghi | Milan | 8 | 6 |
-| Valeri | Parma | 8 | 6 |
-| Miranda J. | Bologna | 8 | 6 |
-| Spinazzola | Napoli | 8 | 6 |
-| Zappacosta | Atalanta | 8 | 6 |
-| Koulierakis | Roma | 8 | 5 |
-| Delprato | Parma | 8 | 5 |
-| Lucumì | Bologna | 8 | 5 |
-| Vojvoda | Udinese | 8 | 5 |
-| Celik | Juventus | 8 | 5 |
-| Mina | Cagliari | 8 | 5 |
-| Hien | Atalanta | 8 | 4 |
-| Carlos Augusto | Inter | 7 | 7 |
-| Kaiki | Como | 7 | 6 |
-| Doekhi | Lazio | 7 | 6 |
-| Gabbia | Milan | 7 | 6 |
-| Romagnoli | Lazio | 7 | 6 |
-| Idzes | Sassuolo | 7 | 5 |
-| Coco | Torino | 7 | 5 |
-| Ismajli | Torino | 7 | 5 |
-| Tomori | Milan | 7 | 5 |
-| Buongiorno | Napoli | 7 | 5 |
-| Tiago Gabriel | Lecce | 7 | 4 |
-| Kristensen T. | Udinese | 7 | 4 |
-| Obert | Cagliari | 7 | 4 |
-| Djimsiti | Atalanta | 7 | 4 |
-| Viery | Fiorentina | 6 | 5 |
-| Valdepenas | Fiorentina | 6 | 5 |
-| Valle | Como | 6 | 5 |
-| Circati | Parma | 6 | 5 |
-| Zortea | Bologna | 6 | 5 |
-| Pavard | Inter | 6 | 5 |
-| Marusic | Lazio | 6 | 5 |
-| Mangas | Monza | 6 | 4 |
-| Bernasconi | Atalanta | 6 | 4 |
-| Heggem | Bologna | 6 | 4 |
-| Ahanor | Atalanta | 6 | 4 |
-| Beukema | Napoli | 6 | 4 |
-| Tavares N. | Lazio | 6 | 4 |
-| Monterisi | Frosinone | 6 | 4 |
-| Bellanova | Atalanta | 6 | 4 |
-| Bella-Kotchap | Venezia | 6 | 3 |
-| Marcandalli | Genoa | 6 | 3 |
-| Comuzzo | Torino | 6 | 3 |
-| Kamara H. | Udinese | 6 | 3 |
-| Gallo | Lecce | 6 | 3 |
-| Rensch | Roma | 5 | 4 |
-| Pedraza | Lazio | 5 | 4 |
-| Martin | Genoa | 5 | 4 |
-| Kofler | Cagliari | 5 | 3 |
-| Bracaglia | Frosinone | 5 | 3 |
-| Zè Pedro | Cagliari | 5 | 3 |
-| Vitik | Bologna | 5 | 3 |
-| Veiga D. | Lecce | 5 | 3 |
-| Kempf | Como | 5 | 3 |
-| Moreno M. | Venezia | 5 | 3 |
-| Kelly L. | Juventus | 5 | 3 |
-| Gaspar K. | Lecce | 5 | 3 |
-| Pedersen | Torino | 5 | 3 |
-| Oyono A. | Frosinone | 5 | 3 |
-| Olivera | Napoli | 5 | 3 |
-| Haps | Venezia | 5 | 3 |
-| Holm | Bologna | 5 | 3 |
-| Parisi | Fiorentina | 5 | 3 |
-| Kolasinac | Atalanta | 5 | 3 |
-| Halhal | Venezia | 4 | 3 |
-| Comert | Torino | 4 | 3 |
-| Calvani | Frosinone | 4 | 3 |
-| Siebert | Lecce | 4 | 3 |
-| Smolcic I. | Como | 4 | 3 |
-| Lucchesi | Monza | 4 | 3 |
-| Ghilardi | Roma | 4 | 3 |
-| Doig | Sassuolo | 4 | 3 |
-| Birindelli | Monza | 4 | 3 |
-| Gatti | Juventus | 4 | 3 |
-| Bertola | Udinese | 4 | 3 |
-| Zanoli | Udinese | 4 | 3 |
-| Valenti | Parma | 4 | 3 |
-| Correia T. | Venezia | 4 | 3 |
-| Walukiewicz | Sassuolo | 4 | 3 |
-| Delli Carri | Monza | 4 | 3 |
-| Mitaj | Genoa | 4 | 2 |
-| Arizala | Udinese | 4 | 2 |
-| Pongracic | Fiorentina | 4 | 2 |
-| Zappa | Cagliari | 4 | 2 |
-| Kabasele | Udinese | 4 | 2 |
-| Rodriguez Ju. | Cagliari | 3 | 3 |
-| Britschgi | Parma | 3 | 3 |
-| Floriani Mussolini | Lazio | 3 | 3 |
-| Provstgaard | Lazio | 3 | 3 |
-| Candè | Sassuolo | 3 | 3 |
-| De Winter | Milan | 3 | 3 |
-| Angelino | Roma | 3 | 3 |
-| Akpoguma | Frosinone | 3 | 2 |
-| Kouadio | Monza | 3 | 2 |
-| Troilo | Parma | 3 | 2 |
-| Athekame | Milan | 3 | 2 |
-| Joao Mario | Fiorentina | 3 | 2 |
-| Idrissi R. | Cagliari | 3 | 2 |
-| Schingtienne | Venezia | 3 | 2 |
-| Hainaut | Venezia | 3 | 2 |
-| Sverko | Venezia | 3 | 2 |
-| Cittadini | Frosinone | 3 | 2 |
-| Kossounou | Atalanta | 3 | 2 |
-| Casale | Bologna | 3 | 2 |
-| Estupinan | Milan | 3 | 2 |
-| Carboni A. | Monza | 3 | 2 |
-| Ranieri L. | Fiorentina | 3 | 2 |
-| Alhassane | Bologna | 2 | 2 |
-| Puczka | Genoa | 2 | 2 |
-| Marin R. | Napoli | 2 | 2 |
-| Lazzari | Lazio | 2 | 2 |
-| Aurelio | Cagliari | 2 | 1 |
-| Diawara S. | Milan | 2 | 1 |
-| Franjic | Venezia | 2 | 1 |
-| Helland | Bologna | 2 | 1 |
-| Otoa | Genoa | 2 | 1 |
-| Palma | Udinese | 2 | 1 |
-| Van Der Brempt | Como | 2 | 1 |
-| Jean | Lecce | 2 | 1 |
-| Sagrado | Venezia | 2 | 1 |
-| Ebosse | Udinese | 2 | 1 |
-| Pellegrini Lu. | Lazio | 2 | 1 |
-| Sabelli | Genoa | 2 | 1 |
-| Biraghi | Torino | 2 | 1 |
-| Cuenca A. | Como | 1 | 2 |
-| Bakoune | Monza | 1 | 1 |
-| Corrado | Frosinone | 1 | 1 |
-| Oyono J. | Frosinone | 1 | 1 |
-| Gelli J. | Frosinone | 1 | 1 |
-| Gomes | Venezia | 1 | 1 |
-| Mlacic | Udinese | 1 | 1 |
-| Raterink | Cagliari | 1 | 1 |
-| Ziolkowski | Roma | 1 | 1 |
-| Ndiaye | Parma | 1 | 1 |
-| Ndaba | Lecce | 1 | 1 |
-| Perez M. | Lecce | 1 | 1 |
-| Pieragnolo | Sassuolo | 1 | 1 |
-| Marianucci | Napoli | 1 | 1 |
-| Vogliacco | Genoa | 1 | 1 |
-| Matturro | Genoa | 1 | 1 |
-| Missori | Sassuolo | 1 | 1 |
-| Carboni F. | Parma | 1 | 1 |
-| Cabal | Juventus | 1 | 1 |
-| Abankwah | Udinese | 1 | 1 |
-| Mazzocchi | Napoli | 1 | 1 |
-| Amey | Frosinone | 1 | 1 |
-| Antov | Monza | 1 | 1 |
-| De Silvestri | Bologna | 1 | 1 |
-| Goldaniga | Como | 1 | 1 |
-| Patric | Lazio | 1 | 1 |
-| Rugani | Juventus | 1 | 1 |
+Dimarco gioca nel Inter, ruolo Difensori, quotazione 32 crediti, FVM 66.
+Wesley gioca nel Roma, ruolo Difensori, quotazione 17 crediti, FVM 21.
+Akanji gioca nel Inter, ruolo Difensori, quotazione 16 crediti, FVM 14.
+Bremer gioca nel Juventus, ruolo Difensori, quotazione 15 crediti, FVM 13.
+Mancini gioca nel Roma, ruolo Difensori, quotazione 15 crediti, FVM 12.
+Pavlovic gioca nel Milan, ruolo Difensori, quotazione 14 crediti, FVM 12.
+Rrahmani gioca nel Napoli, ruolo Difensori, quotazione 14 crediti, FVM 12.
+Bastoni gioca nel Inter, ruolo Difensori, quotazione 14 crediti, FVM 11.
+Solet gioca nel Udinese, ruolo Difensori, quotazione 13 crediti, FVM 12.
+Kalulu gioca nel Juventus, ruolo Difensori, quotazione 13 crediti, FVM 12.
+N'Dicka gioca nel Roma, ruolo Difensori, quotazione 13 crediti, FVM 11.
+Di Lorenzo gioca nel Napoli, ruolo Difensori, quotazione 12 crediti, FVM 10.
+Stones gioca nel Inter, ruolo Difensori, quotazione 12 crediti, FVM 10.
+Gila gioca nel Milan, ruolo Difensori, quotazione 12 crediti, FVM 8.
+Ostigard gioca nel Genoa, ruolo Difensori, quotazione 11 crediti, FVM 10.
+Bisseck gioca nel Inter, ruolo Difensori, quotazione 11 crediti, FVM 8.
+Ramon gioca nel Como, ruolo Difensori, quotazione 10 crediti, FVM 8.
+Dodò gioca nel Fiorentina, ruolo Difensori, quotazione 10 crediti, FVM 8.
+Scalvini gioca nel Atalanta, ruolo Difensori, quotazione 10 crediti, FVM 7.
+Hermoso gioca nel Roma, ruolo Difensori, quotazione 10 crediti, FVM 7.
+Vasquez gioca nel Genoa, ruolo Difensori, quotazione 9 crediti, FVM 8.
+Chalobah T. gioca nel Como, ruolo Difensori, quotazione 9 crediti, FVM 7.
+Cambiaso gioca nel Juventus, ruolo Difensori, quotazione 9 crediti, FVM 7.
+Couto gioca nel Como, ruolo Difensori, quotazione 8 crediti, FVM 7.
+Gutierrez gioca nel Napoli, ruolo Difensori, quotazione 8 crediti, FVM 7.
+Dragusin gioca nel Fiorentina, ruolo Difensori, quotazione 8 crediti, FVM 7.
+Norton-Cuffy gioca nel Genoa, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Jimenez A. gioca nel Fiorentina, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Bartesaghi gioca nel Milan, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Valeri gioca nel Parma, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Miranda J. gioca nel Bologna, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Spinazzola gioca nel Napoli, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Zappacosta gioca nel Atalanta, ruolo Difensori, quotazione 8 crediti, FVM 6.
+Koulierakis gioca nel Roma, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Delprato gioca nel Parma, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Lucumì gioca nel Bologna, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Vojvoda gioca nel Udinese, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Celik gioca nel Juventus, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Mina gioca nel Cagliari, ruolo Difensori, quotazione 8 crediti, FVM 5.
+Hien gioca nel Atalanta, ruolo Difensori, quotazione 8 crediti, FVM 4.
+Carlos Augusto gioca nel Inter, ruolo Difensori, quotazione 7 crediti, FVM 7.
+Kaiki gioca nel Como, ruolo Difensori, quotazione 7 crediti, FVM 6.
+Doekhi gioca nel Lazio, ruolo Difensori, quotazione 7 crediti, FVM 6.
+Gabbia gioca nel Milan, ruolo Difensori, quotazione 7 crediti, FVM 6.
+Romagnoli gioca nel Lazio, ruolo Difensori, quotazione 7 crediti, FVM 6.
+Idzes gioca nel Sassuolo, ruolo Difensori, quotazione 7 crediti, FVM 5.
+Coco gioca nel Torino, ruolo Difensori, quotazione 7 crediti, FVM 5.
+Ismajli gioca nel Torino, ruolo Difensori, quotazione 7 crediti, FVM 5.
+Tomori gioca nel Milan, ruolo Difensori, quotazione 7 crediti, FVM 5.
+Buongiorno gioca nel Napoli, ruolo Difensori, quotazione 7 crediti, FVM 5.
+Tiago Gabriel gioca nel Lecce, ruolo Difensori, quotazione 7 crediti, FVM 4.
+Kristensen T. gioca nel Udinese, ruolo Difensori, quotazione 7 crediti, FVM 4.
+Obert gioca nel Cagliari, ruolo Difensori, quotazione 7 crediti, FVM 4.
+Djimsiti gioca nel Atalanta, ruolo Difensori, quotazione 7 crediti, FVM 4.
+Viery gioca nel Fiorentina, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Valdepenas gioca nel Fiorentina, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Valle gioca nel Como, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Circati gioca nel Parma, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Zortea gioca nel Bologna, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Pavard gioca nel Inter, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Marusic gioca nel Lazio, ruolo Difensori, quotazione 6 crediti, FVM 5.
+Mangas gioca nel Monza, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Bernasconi gioca nel Atalanta, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Heggem gioca nel Bologna, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Ahanor gioca nel Atalanta, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Beukema gioca nel Napoli, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Tavares N. gioca nel Lazio, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Monterisi gioca nel Frosinone, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Bellanova gioca nel Atalanta, ruolo Difensori, quotazione 6 crediti, FVM 4.
+Bella-Kotchap gioca nel Venezia, ruolo Difensori, quotazione 6 crediti, FVM 3.
+Marcandalli gioca nel Genoa, ruolo Difensori, quotazione 6 crediti, FVM 3.
+Comuzzo gioca nel Torino, ruolo Difensori, quotazione 6 crediti, FVM 3.
+Kamara H. gioca nel Udinese, ruolo Difensori, quotazione 6 crediti, FVM 3.
+Gallo gioca nel Lecce, ruolo Difensori, quotazione 6 crediti, FVM 3.
+Rensch gioca nel Roma, ruolo Difensori, quotazione 5 crediti, FVM 4.
+Pedraza gioca nel Lazio, ruolo Difensori, quotazione 5 crediti, FVM 4.
+Martin gioca nel Genoa, ruolo Difensori, quotazione 5 crediti, FVM 4.
+Kofler gioca nel Cagliari, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Bracaglia gioca nel Frosinone, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Zè Pedro gioca nel Cagliari, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Vitik gioca nel Bologna, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Veiga D. gioca nel Lecce, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Kempf gioca nel Como, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Moreno M. gioca nel Venezia, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Kelly L. gioca nel Juventus, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Gaspar K. gioca nel Lecce, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Pedersen gioca nel Torino, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Oyono A. gioca nel Frosinone, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Olivera gioca nel Napoli, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Haps gioca nel Venezia, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Holm gioca nel Bologna, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Parisi gioca nel Fiorentina, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Kolasinac gioca nel Atalanta, ruolo Difensori, quotazione 5 crediti, FVM 3.
+Halhal gioca nel Venezia, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Comert gioca nel Torino, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Calvani gioca nel Frosinone, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Siebert gioca nel Lecce, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Smolcic I. gioca nel Como, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Lucchesi gioca nel Monza, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Ghilardi gioca nel Roma, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Doig gioca nel Sassuolo, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Birindelli gioca nel Monza, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Gatti gioca nel Juventus, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Bertola gioca nel Udinese, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Zanoli gioca nel Udinese, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Valenti gioca nel Parma, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Correia T. gioca nel Venezia, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Walukiewicz gioca nel Sassuolo, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Delli Carri gioca nel Monza, ruolo Difensori, quotazione 4 crediti, FVM 3.
+Mitaj gioca nel Genoa, ruolo Difensori, quotazione 4 crediti, FVM 2.
+Arizala gioca nel Udinese, ruolo Difensori, quotazione 4 crediti, FVM 2.
+Pongracic gioca nel Fiorentina, ruolo Difensori, quotazione 4 crediti, FVM 2.
+Zappa gioca nel Cagliari, ruolo Difensori, quotazione 4 crediti, FVM 2.
+Kabasele gioca nel Udinese, ruolo Difensori, quotazione 4 crediti, FVM 2.
+Rodriguez Ju. gioca nel Cagliari, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Britschgi gioca nel Parma, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Floriani Mussolini gioca nel Lazio, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Provstgaard gioca nel Lazio, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Candè gioca nel Sassuolo, ruolo Difensori, quotazione 3 crediti, FVM 3.
+De Winter gioca nel Milan, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Angelino gioca nel Roma, ruolo Difensori, quotazione 3 crediti, FVM 3.
+Akpoguma gioca nel Frosinone, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Kouadio gioca nel Monza, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Troilo gioca nel Parma, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Athekame gioca nel Milan, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Joao Mario gioca nel Fiorentina, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Idrissi R. gioca nel Cagliari, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Schingtienne gioca nel Venezia, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Hainaut gioca nel Venezia, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Sverko gioca nel Venezia, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Cittadini gioca nel Frosinone, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Kossounou gioca nel Atalanta, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Casale gioca nel Bologna, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Estupinan gioca nel Milan, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Carboni A. gioca nel Monza, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Ranieri L. gioca nel Fiorentina, ruolo Difensori, quotazione 3 crediti, FVM 2.
+Alhassane gioca nel Bologna, ruolo Difensori, quotazione 2 crediti, FVM 2.
+Puczka gioca nel Genoa, ruolo Difensori, quotazione 2 crediti, FVM 2.
+Marin R. gioca nel Napoli, ruolo Difensori, quotazione 2 crediti, FVM 2.
+Lazzari gioca nel Lazio, ruolo Difensori, quotazione 2 crediti, FVM 2.
+Aurelio gioca nel Cagliari, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Diawara S. gioca nel Milan, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Franjic gioca nel Venezia, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Helland gioca nel Bologna, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Otoa gioca nel Genoa, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Palma gioca nel Udinese, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Van Der Brempt gioca nel Como, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Jean gioca nel Lecce, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Sagrado gioca nel Venezia, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Ebosse gioca nel Udinese, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Pellegrini Lu. gioca nel Lazio, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Sabelli gioca nel Genoa, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Biraghi gioca nel Torino, ruolo Difensori, quotazione 2 crediti, FVM 1.
+Cuenca A. gioca nel Como, ruolo Difensori, quotazione 1 crediti, FVM 2.
+Bakoune gioca nel Monza, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Corrado gioca nel Frosinone, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Oyono J. gioca nel Frosinone, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Gelli J. gioca nel Frosinone, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Gomes gioca nel Venezia, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Mlacic gioca nel Udinese, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Raterink gioca nel Cagliari, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Ziolkowski gioca nel Roma, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Ndiaye gioca nel Parma, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Ndaba gioca nel Lecce, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Perez M. gioca nel Lecce, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Pieragnolo gioca nel Sassuolo, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Marianucci gioca nel Napoli, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Vogliacco gioca nel Genoa, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Matturro gioca nel Genoa, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Missori gioca nel Sassuolo, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Carboni F. gioca nel Parma, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Cabal gioca nel Juventus, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Abankwah gioca nel Udinese, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Mazzocchi gioca nel Napoli, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Amey gioca nel Frosinone, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Antov gioca nel Monza, ruolo Difensori, quotazione 1 crediti, FVM 1.
+De Silvestri gioca nel Bologna, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Goldaniga gioca nel Como, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Patric gioca nel Lazio, ruolo Difensori, quotazione 1 crediti, FVM 1.
+Rugani gioca nel Juventus, ruolo Difensori, quotazione 1 crediti, FVM 1.

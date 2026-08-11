@@ -1,67 +1,65 @@
-# Calciatori Portieri — Serie A Fantacalcio Mantra 2026-27
+# Portieri — Fantacalcio Mantra 2026-27
 Totale: 62 calciatori
 
-| Nome | Squadra | Ruolo Mantra | Quotazione | FVM |
-|------|---------|-------------|-----------|-----|
-| Svilar | Roma | Por | 18 | 16 |
-| Martinez Jo. | Inter | Por | 17 | 16 |
-| Butez | Como | Por | 16 | 14 |
-| Carnesecchi | Atalanta | Por | 16 | 13 |
-| Maignan | Milan | Por | 15 | 13 |
-| De Gea | Fiorentina | Por | 13 | 11 |
-| Meret | Napoli | Por | 11 | 11 |
-| Skorupski | Bologna | Por | 10 | 9 |
-| Di Gregorio | Juventus | Por | 9 | 10 |
-| Mandas | Lazio | Por | 9 | 8 |
-| Okoye | Udinese | Por | 9 | 7 |
-| Caprile | Cagliari | Por | 9 | 7 |
-| Falcone | Lecce | Por | 8 | 6 |
-| Bijlow | Genoa | Por | 8 | 5 |
-| Suzuki | Parma | Por | 7 | 5 |
-| Muric | Sassuolo | Por | 7 | 4 |
-| Daffara | Parma | Por | 7 | 1 |
-| Stankovic F. | Venezia | Por | 6 | 4 |
-| Perin | Juventus | Por | 6 | 3 |
-| Thiam | Monza | Por | 5 | 3 |
-| Milinkovic-Savic V. | Napoli | Por | 5 | 3 |
-| Palmisani | Frosinone | Por | 4 | 2 |
-| Desplanches | Frosinone | Por | 2 | 2 |
-| Provedel | Inter | Por | 2 | 1 |
-| Vismara | Atalanta | Por | 1 | 1 |
-| Renzetti | Lazio | Por | 1 | 1 |
-| Happonen | Bologna | Por | 1 | 1 |
-| Pozzi | Venezia | Por | 1 | 1 |
-| Strajnar | Monza | Por | 1 | 1 |
-| Lolic | Frosinone | Por | 1 | 1 |
-| Mascardi | Torino | Por | 1 | 1 |
-| Siviero | Torino | Por | 1 | 1 |
-| Motta | Lazio | Por | 1 | 1 |
-| Tornqvist | Como | Por | 1 | 1 |
-| Pessina Mas. | Bologna | Por | 1 | 1 |
-| De Marzi | Roma | Por | 1 | 1 |
-| Torriani | Milan | Por | 1 | 1 |
-| Pizzignacco | Monza | Por | 1 | 1 |
-| Grandi | Venezia | Por | 1 | 1 |
-| Corvi | Parma | Por | 1 | 1 |
-| Sherri | Cagliari | Por | 1 | 1 |
-| Stolz | Genoa | Por | 1 | 1 |
-| Samooja | Lecce | Por | 1 | 1 |
-| Christensen O. | Fiorentina | Por | 1 | 1 |
-| Piana | Udinese | Por | 1 | 1 |
-| Paleari | Torino | Por | 1 | 1 |
-| Ciocci | Cagliari | Por | 1 | 1 |
-| Turati | Sassuolo | Por | 1 | 1 |
-| Russo A. | Sassuolo | Por | 1 | 1 |
-| Contini | Napoli | Por | 1 | 1 |
-| Terracciano | Milan | Por | 1 | 1 |
-| Vigorito | Como | Por | 1 | 1 |
-| Fruchtl | Lecce | Por | 1 | 1 |
-| Rossi F. | Atalanta | Por | 1 | 1 |
-| Satalino | Sassuolo | Por | 1 | 1 |
-| Pinsoglio | Juventus | Por | 1 | 1 |
-| Di Gennaro | Inter | Por | 1 | 1 |
-| Gollini | Roma | Por | 1 | 1 |
-| Padelli | Udinese | Por | 1 | 1 |
-| Sommariva | Genoa | Por | 1 | 1 |
-| Lezzerini | Fiorentina | Por | 1 | 1 |
-| Sportiello | Atalanta | Por | 1 | 1 |
+Svilar gioca nel Roma, ruolo Mantra Por, quotazione 18 crediti, FVM 16.
+Martinez Jo. gioca nel Inter, ruolo Mantra Por, quotazione 17 crediti, FVM 16.
+Butez gioca nel Como, ruolo Mantra Por, quotazione 16 crediti, FVM 14.
+Carnesecchi gioca nel Atalanta, ruolo Mantra Por, quotazione 16 crediti, FVM 13.
+Maignan gioca nel Milan, ruolo Mantra Por, quotazione 15 crediti, FVM 13.
+De Gea gioca nel Fiorentina, ruolo Mantra Por, quotazione 13 crediti, FVM 11.
+Meret gioca nel Napoli, ruolo Mantra Por, quotazione 11 crediti, FVM 11.
+Skorupski gioca nel Bologna, ruolo Mantra Por, quotazione 10 crediti, FVM 9.
+Di Gregorio gioca nel Juventus, ruolo Mantra Por, quotazione 9 crediti, FVM 10.
+Mandas gioca nel Lazio, ruolo Mantra Por, quotazione 9 crediti, FVM 8.
+Okoye gioca nel Udinese, ruolo Mantra Por, quotazione 9 crediti, FVM 7.
+Caprile gioca nel Cagliari, ruolo Mantra Por, quotazione 9 crediti, FVM 7.
+Falcone gioca nel Lecce, ruolo Mantra Por, quotazione 8 crediti, FVM 6.
+Bijlow gioca nel Genoa, ruolo Mantra Por, quotazione 8 crediti, FVM 5.
+Suzuki gioca nel Parma, ruolo Mantra Por, quotazione 7 crediti, FVM 5.
+Muric gioca nel Sassuolo, ruolo Mantra Por, quotazione 7 crediti, FVM 4.
+Daffara gioca nel Parma, ruolo Mantra Por, quotazione 7 crediti, FVM 1.
+Stankovic F. gioca nel Venezia, ruolo Mantra Por, quotazione 6 crediti, FVM 4.
+Perin gioca nel Juventus, ruolo Mantra Por, quotazione 6 crediti, FVM 3.
+Thiam gioca nel Monza, ruolo Mantra Por, quotazione 5 crediti, FVM 3.
+Milinkovic-Savic V. gioca nel Napoli, ruolo Mantra Por, quotazione 5 crediti, FVM 3.
+Palmisani gioca nel Frosinone, ruolo Mantra Por, quotazione 4 crediti, FVM 2.
+Desplanches gioca nel Frosinone, ruolo Mantra Por, quotazione 2 crediti, FVM 2.
+Provedel gioca nel Inter, ruolo Mantra Por, quotazione 2 crediti, FVM 1.
+Vismara gioca nel Atalanta, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Renzetti gioca nel Lazio, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Happonen gioca nel Bologna, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Pozzi gioca nel Venezia, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Strajnar gioca nel Monza, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Lolic gioca nel Frosinone, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Mascardi gioca nel Torino, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Siviero gioca nel Torino, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Motta gioca nel Lazio, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Tornqvist gioca nel Como, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Pessina Mas. gioca nel Bologna, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+De Marzi gioca nel Roma, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Torriani gioca nel Milan, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Pizzignacco gioca nel Monza, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Grandi gioca nel Venezia, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Corvi gioca nel Parma, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Sherri gioca nel Cagliari, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Stolz gioca nel Genoa, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Samooja gioca nel Lecce, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Christensen O. gioca nel Fiorentina, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Piana gioca nel Udinese, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Paleari gioca nel Torino, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Ciocci gioca nel Cagliari, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Turati gioca nel Sassuolo, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Russo A. gioca nel Sassuolo, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Contini gioca nel Napoli, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Terracciano gioca nel Milan, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Vigorito gioca nel Como, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Fruchtl gioca nel Lecce, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Rossi F. gioca nel Atalanta, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Satalino gioca nel Sassuolo, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Pinsoglio gioca nel Juventus, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Di Gennaro gioca nel Inter, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Gollini gioca nel Roma, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Padelli gioca nel Udinese, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Sommariva gioca nel Genoa, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Lezzerini gioca nel Fiorentina, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
+Sportiello gioca nel Atalanta, ruolo Mantra Por, quotazione 1 crediti, FVM 1.
