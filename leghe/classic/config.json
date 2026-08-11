@@ -1,0 +1,36 @@
+{
+  "lega": {
+    "nome": "NOME_LEGA_CLASSIC",
+    "modalita": "Classic",
+    "stagione": "2026-27",
+    "budget_iniziale": 500,
+    "crediti_residui": 500,
+    "calciatori_in_rosa": 25,
+    "titolari": 11,
+    "panchinari": 7,
+    "portieri_minimi_rosa": 3,
+    "_panchina_nota": "In Classic la panchina si ordina per ruolo: P -> D -> C -> A",
+    "modificatori": {
+      "classic_plus": false,
+      "bonus_capitano": false,
+      "bonus_fairplay": false
+    },
+    "bonus_attivi": {
+      "porta_inviolata_por": true,
+      "porta_inviolata_def": false,
+      "gol_subiti_por": true,
+      "gol_subiti_def": false,
+      "assist": true
+    },
+    "sv_con_ammonizione": "sv",
+    "_sv_con_ammonizione_note": "Valori validi: sv | 5.5"
+  },
+  "schemi_validi": [
+    "3-4-3", "3-5-2", "4-3-3",
+    "4-4-2", "4-5-1", "5-3-2", "5-4-1"
+  ],
+  "ruoli_validi": ["P","D","C","A"],
+  "_ruoli_note": "In Classic i ruoli sono 4: P=Portiere, D=Difensore, C=Centrocampista, A=Attaccante. Nessun ruolo polivalente.",
+  "ordine_panchina_classic": ["P","D","D","D","C","A","A"],
+  "_ordine_panchina_nota": "Ordine standard consigliato, personalizzabile. Le sostituzioni seguono l'ordine ruolo: prima P, poi D, poi C, poi A"
+}
