@@ -202,6 +202,42 @@ def build_context(roles: list[str], data: dict[str, str]) -> str:
     )
 
 
+def build_shortlist(
+    role: str,
+    index: dict,
+    n: int = 15,
+    sort_by: str = "fvm",          # "fvm" | "ratio" | "q_asc"
+    q_max: int | None = None,
+    q_min: int | None = None,
+    fvm_min: int | None = None,
+) -> str:
+    """
+    Ritorna una stringa con al massimo N giocatori del ruolo indicato,
+    già filtrati e ordinati dallo script (zero token sprecati).
+    Formato identico al listone originale.
+    """
+    players = [v for v in index.values() if v["ruolo"] == role]
+
+    if q_max  is not None: players = [p for p in players if p["quotazione"] <= q_max]
+    if q_min  is not None: players = [p for p in players if p["quotazione"] >= q_min]
+    if fvm_min is not None: players = [p for p in players if p["fvm"] >= fvm_min]
+
+    if sort_by == "fvm":
+        players.sort(key=lambda p: -p["fvm"])
+    elif sort_by == "ratio":
+        players.sort(key=lambda p: -(p["fvm"] / p["quotazione"] if p["quotazione"] else 0))
+    elif sort_by == "q_asc":
+        players.sort(key=lambda p: p["quotazione"])
+
+    players = players[:n]
+    lines = [
+        f"{p['nome']} gioca nel {p['squadra']}, ruolo {role}, "
+        f"quotazione {p['quotazione']} crediti, FVM {p['fvm']}."
+        for p in players
+    ]
+    return f"=== {ROLE_LABELS_LONG[role]} (top {len(players)}) ===\n" + "\n".join(lines)
+
+
 def estimate_num_ctx(context: str, history: list[dict]) -> int:
     """Stima num_ctx come il minimo sufficiente, cappato a 16384."""
     chars = len(BASE_SYSTEM) + len(context)
@@ -223,61 +259,82 @@ def trim_history(history: list[dict]) -> list[dict]:
     return history
 
 # ── Quick picks ───────────────────────────────────────────────────────────────
+# build_ctx: callable(index) → str  — costruisce il contesto pre-filtrato.
+# Se assente, usa build_context(roles, data) (listone completo per ruolo).
 
 QUICK_PICKS = [
     {
         "label": "Miglior portiere assoluto",
         "roles": ["P"],
-        "prompt": "Qual è il miglior portiere da acquistare all'asta? Scegli UN solo nome. Indica: nome, squadra, quotazione ufficiale, prezzo massimo consigliato, motivazione in 2 righe.",
+        "build_ctx": lambda idx: build_shortlist("P", idx, n=10, sort_by="fvm"),
+        "prompt": "Scegli IL miglior portiere da acquistare. UN nome. Formato: Nome | Squadra | Q:X | Prezzo max:Y | Motivo (1 riga).",
     },
     {
         "label": "Miglior portiere low-cost (quotazione ≤ 5)",
         "roles": ["P"],
-        "prompt": "Qual è il miglior portiere con quotazione ufficiale ≤ 5 crediti? UN solo nome. Indica: nome, squadra, quotazione, prezzo massimo consigliato, motivazione in 2 righe.",
+        "build_ctx": lambda idx: build_shortlist("P", idx, n=10, sort_by="fvm", q_max=5),
+        "prompt": "Scegli IL miglior portiere low-cost (≤5 crediti). UN nome. Formato: Nome | Squadra | Q:X | Prezzo max:Y | Motivo (1 riga).",
     },
     {
         "label": "Difesa più forte possibile",
         "roles": ["D"],
-        "prompt": "Costruisci la difesa più forte per il Fantacalcio Classic. Scegli esattamente 8 difensori. Per ognuno: nome, squadra, quotazione ufficiale, prezzo max consigliato. Niente testo extra.",
+        "build_ctx": lambda idx: build_shortlist("D", idx, n=20, sort_by="fvm"),
+        "prompt": "Scegli i migliori 8 difensori. Formato tabella: Nome | Squadra | Q | Prezzo max. Niente testo extra.",
     },
     {
         "label": "Difesa economica (budget ≤ 60 crediti totali)",
         "roles": ["D"],
-        "prompt": "Scegli 8 difensori con budget totale ≤ 60 crediti (somma quotazioni). Per ognuno: nome, squadra, quotazione. Mostra il totale alla fine.",
+        "build_ctx": lambda idx: build_shortlist("D", idx, n=25, sort_by="fvm", q_max=12),
+        "prompt": "Scegli 8 difensori con somma quotazioni ≤ 60. Formato: Nome | Squadra | Q. Totale alla fine.",
     },
     {
         "label": "Centrocampo più forte (modulo 3-5-2)",
         "roles": ["C"],
-        "prompt": "Scegli i 5 migliori centrocampisti per un 3-5-2. Per ognuno: nome, squadra, quotazione ufficiale, prezzo max consigliato. Niente testo extra.",
+        "build_ctx": lambda idx: build_shortlist("C", idx, n=15, sort_by="fvm"),
+        "prompt": "Scegli i migliori 5 centrocampisti per un 3-5-2. Formato: Nome | Squadra | Q | Prezzo max. Niente testo extra.",
     },
     {
         "label": "Top 3 attaccanti da non perdere",
         "roles": ["A"],
-        "prompt": "Quali sono i 3 attaccanti assolutamente da avere all'asta? Per ognuno: nome, squadra, quotazione ufficiale, prezzo max consigliato, motivazione in 1 riga.",
+        "build_ctx": lambda idx: build_shortlist("A", idx, n=12, sort_by="fvm"),
+        "prompt": "Scegli i 3 attaccanti imperdibili. Formato: Nome | Squadra | Q | Prezzo max | Motivo (1 riga).",
     },
     {
         "label": "Attaccante sorpresa (FVM alto, quotazione bassa)",
         "roles": ["A"],
-        "prompt": "Trova l'attaccante con il miglior rapporto FVM/quotazione. UN solo nome. Mostra il calcolo: FVM ÷ quotazione. Indica prezzo max consigliato.",
+        "build_ctx": lambda idx: build_shortlist("A", idx, n=15, sort_by="ratio"),
+        "prompt": "Scegli UN attaccante sorpresa (miglior FVM/Q). Formato: Nome | Squadra | Q | FVM | Ratio | Prezzo max.",
     },
     {
         "label": "Rosa competitiva completa (3-4-3)",
         "roles": None,
         "prompts": {
-            "P": "Scegli 2 portieri (1 titolare + 1 riserva) per una rosa 3-4-3. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
-            "D": "Scegli 5 difensori (4 titolari + 1 riserva) per una rosa 3-4-3. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
-            "C": "Scegli 5 centrocampisti (4 titolari + 1 riserva) per una rosa 3-4-3. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
-            "A": "Scegli 4 attaccanti (3 titolari + 1 riserva) per una rosa 3-4-3. Per ognuno: nome, squadra, quotazione, prezzo max consigliato.",
+            "P": "Scegli 2 portieri (titolare+riserva). Formato: Nome | Squadra | Q | Prezzo max.",
+            "D": "Scegli 5 difensori (4+1 riserva). Formato: Nome | Squadra | Q | Prezzo max.",
+            "C": "Scegli 5 centrocampisti (4+1 riserva). Formato: Nome | Squadra | Q | Prezzo max.",
+            "A": "Scegli 4 attaccanti (3+1 riserva). Formato: Nome | Squadra | Q | Prezzo max.",
+        },
+        "build_ctxs": {
+            "P": lambda idx: build_shortlist("P", idx, n=10, sort_by="fvm"),
+            "D": lambda idx: build_shortlist("D", idx, n=20, sort_by="fvm"),
+            "C": lambda idx: build_shortlist("C", idx, n=20, sort_by="fvm"),
+            "A": lambda idx: build_shortlist("A", idx, n=15, sort_by="fvm"),
         },
     },
     {
         "label": "Rosa low-cost (budget totale ≤ 250 crediti)",
         "roles": None,
         "prompts": {
-            "P": "Scegli 2 portieri con budget max 20 crediti totali. Per ognuno: nome, squadra, quotazione.",
-            "D": "Scegli 5 difensori con budget max 70 crediti totali. Per ognuno: nome, squadra, quotazione.",
-            "C": "Scegli 5 centrocampisti con budget max 80 crediti totali. Per ognuno: nome, squadra, quotazione.",
-            "A": "Scegli 4 attaccanti con budget max 80 crediti totali. Per ognuno: nome, squadra, quotazione.",
+            "P": "Scegli 2 portieri, budget max 20 totali. Formato: Nome | Squadra | Q.",
+            "D": "Scegli 5 difensori, budget max 70 totali. Formato: Nome | Squadra | Q.",
+            "C": "Scegli 5 centrocampisti, budget max 80 totali. Formato: Nome | Squadra | Q.",
+            "A": "Scegli 4 attaccanti, budget max 80 totali. Formato: Nome | Squadra | Q.",
+        },
+        "build_ctxs": {
+            "P": lambda idx: build_shortlist("P", idx, n=12, sort_by="fvm", q_max=8),
+            "D": lambda idx: build_shortlist("D", idx, n=20, sort_by="fvm", q_max=15),
+            "C": lambda idx: build_shortlist("C", idx, n=20, sort_by="fvm", q_max=18),
+            "A": lambda idx: build_shortlist("A", idx, n=15, sort_by="fvm", q_max=22),
         },
     },
 ]
@@ -291,20 +348,27 @@ def show_quick_picks_menu():
     print("  └────────────────────────────────────────────────────┘")
 
 
-def run_quick_pick(pick: dict, data: dict, history: list) -> list[dict]:
+def run_quick_pick(pick: dict, data: dict, index: dict, history: list) -> list[dict]:
     """
     Esegue un quick pick e restituisce i nuovi messaggi da aggiungere alla storia.
-    Per le rose sequenziali: 4 chiamate separate, nessun accumulo inter-ruolo.
+    Usa build_ctx/build_ctxs (shortlist pre-filtrata) quando disponibile,
+    altrimenti usa il listone completo per ruolo.
+    Per le rose sequenziali: 4 chiamate stateless, nessun accumulo inter-ruolo.
     """
     new_history = []
 
     if pick["roles"] is not None:
-        context = build_context(pick["roles"], data)
-        loaded  = " + ".join(ROLE_LABELS_SHORT[r] for r in pick["roles"])
-        print(f"  [contesto: {loaded}]")
+        # Pick singolo ruolo
+        if "build_ctx" in pick:
+            context = pick["build_ctx"](index)
+            n_lines = context.count("\n")
+            print(f"  [shortlist: {n_lines} righe]")
+        else:
+            context = build_context(pick["roles"], data)
+            loaded  = " + ".join(ROLE_LABELS_SHORT[r] for r in pick["roles"])
+            print(f"  [contesto: {loaded}]")
         messages = (
             [{"role": "system", "content": BASE_SYSTEM + "\n\n" + context}]
-            + trim_history(history)
             + [{"role": "user", "content": pick["prompt"]}]
         )
         print("AI: ", end="", flush=True)
@@ -315,13 +379,14 @@ def run_quick_pick(pick: dict, data: dict, history: list) -> list[dict]:
             {"role": "assistant", "content": reply},
         ]
     else:
-        # Rosa sequenziale: ogni ruolo è una chiamata indipendente
-        # Non passiamo la storia inter-ruolo per mantenere il contesto minimo
+        # Rosa sequenziale: ogni ruolo è una chiamata stateless
         print(f"\n  [rosa sequenziale: 4 chiamate separate]\n")
+        build_ctxs = pick.get("build_ctxs", {})
         for role in ["P", "D", "C", "A"]:
             prompt_r = pick["prompts"][role]
-            context  = build_context([role], data)
-            print(f"  ── {ROLE_LABELS_LONG[role]} ──────────────────────────────")
+            context  = build_ctxs[role](index) if role in build_ctxs else build_context([role], data)
+            n_lines  = context.count("\n")
+            print(f"  ── {ROLE_LABELS_LONG[role]} ({n_lines} righe) ─────────────────────")
             messages = [
                 {"role": "system", "content": BASE_SYSTEM + "\n\n" + context},
                 {"role": "user",   "content": prompt_r},
@@ -339,20 +404,43 @@ def run_quick_pick(pick: dict, data: dict, history: list) -> list[dict]:
 # ── Comunicazione con Ollama ──────────────────────────────────────────────────
 
 def restart_ollama() -> bool:
-    """Riavvia Ollama silenziosamente e attende che sia pronto."""
+    """Riavvia Ollama e attende che il modello sia effettivamente caricato in RAM."""
     print("  [riavvio Ollama...]", end="", flush=True)
     subprocess.run(["pkill", "ollama"], capture_output=True)
     time.sleep(3)
     subprocess.Popen(["ollama", "serve"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    for _ in range(15):
+
+    # Fase 1: attendi che il server HTTP risponda
+    for _ in range(20):
         try:
             urllib.request.urlopen("http://localhost:11434", timeout=1)
-            print(" pronto.")
-            return True
+            break
         except OSError:
             time.sleep(1)
-    print(" fallito.")
-    return False
+    else:
+        print(" fallito (server non risponde).")
+        return False
+
+    # Fase 2: warm-up — invia un messaggio minimo per forzare il caricamento del modello
+    print(" caricamento modello...", end="", flush=True)
+    warmup_payload = json.dumps({
+        "model": MODEL,
+        "messages": [{"role": "user", "content": "ok"}],
+        "stream": False,
+        "options": {"temperature": 0.1, "num_ctx": 512},
+    }).encode()
+    warmup_req = urllib.request.Request(
+        OLLAMA_URL, data=warmup_payload,
+        headers={"Content-Type": "application/json"}, method="POST",
+    )
+    try:
+        with urllib.request.urlopen(warmup_req, timeout=120):
+            pass
+        print(" pronto.")
+        return True
+    except OSError:
+        print(" fallito (warm-up timeout).")
+        return False
 
 
 def ollama_chat(messages: list, retry: bool = True) -> str:
@@ -448,7 +536,7 @@ def main():
             elif 1 <= n <= len(QUICK_PICKS):
                 pick = QUICK_PICKS[n - 1]
                 print(f"\n  → {pick['label']}\n")
-                history.extend(run_quick_pick(pick, data, history))
+                history.extend(run_quick_pick(pick, data, index, history))
             else:
                 print(f"  → Numero non valido. Scegli tra 1 e {len(QUICK_PICKS)}, oppure 0.\n")
             continue
