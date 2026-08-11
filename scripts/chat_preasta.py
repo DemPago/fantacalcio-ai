@@ -16,7 +16,7 @@ import time
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUOLI_DIR = os.path.join(BASE, "knowledge_base", "listoni", "per_ruolo_classic")
 OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL = "qwen2.5:7b"
+MODEL = "mistral:7b"
 
 # ── Carica i file per ruolo ───────────────────────────────────────────────────
 
@@ -84,6 +84,79 @@ def count_players(data: dict) -> int:
     return sum(line.count("gioca nel") for d in data.values() for line in d.splitlines())
 
 # ── Rileva il ruolo dalla domanda ─────────────────────────────────────────────
+
+def find_player_by_name(query: str, index: dict) -> dict | None:
+    """Cerca un giocatore nell'indice per nome (esatto, senza spazi, parziale ≥4 char)."""
+    key = query.lower()
+    key_nospace = key.replace(" ", "")
+    found = index.get(key) or index.get(key_nospace)
+    if not found:
+        for k, v in index.items():
+            if (len(key) >= 4 and key in k) or (len(key_nospace) >= 4 and key_nospace in k):
+                return v
+    return found
+
+# Pattern per relazioni tipo "secondo di X", "panchinaro di X", "riserva di X"
+import re as _re
+_REL_PATTERN = _re.compile(
+    r'\b(?:secondo|panchinaro|riserva|backup|dodicesimo|dodic)\b[^.!?]*?\bdi\s+([A-Z][a-zàèéìòùA-Z]+(?:\s+[A-Z][a-zàèéìòùA-Z]+)?)',
+    _re.IGNORECASE
+)
+
+def _extract_rel_name(text: str) -> str | None:
+    """Estrae il nome del giocatore da frasi relazionali; gestisce cognomi composti."""
+    m = _REL_PATTERN.search(text)
+    if not m:
+        return None
+    raw = m.group(1).strip()
+    tokens = raw.split()
+    if len(tokens) == 2:
+        # Tieni entrambe solo se la seconda parola inizia davvero con maiuscola nel testo originale
+        if not tokens[1][0].isupper():
+            raw = tokens[0]
+    return raw
+
+def expand_relational_query(text: str, index: dict, data: dict) -> tuple[str, list[str]]:
+    """
+    Se la domanda contiene 'panchinaro/secondo/riserva di X', restituisce:
+    - testo arricchito con il contesto esplicito da aggiungere alla domanda
+    - lista di ruoli da caricare
+    Altrimenti restituisce ('', []).
+    """
+    ref_name = _extract_rel_name(text)
+    if not ref_name:
+        return "", []
+    player = find_player_by_name(ref_name, index)
+    if not player:
+        return "", []
+
+    squadra = player["squadra"]
+    ruolo   = player["ruolo"]
+
+    # Tutti i giocatori dello stesso ruolo e squadra (escluso il titolare stesso)
+    teammates = [
+        v for v in index.values()
+        if v["squadra"] == squadra and v["ruolo"] == ruolo and v["nome"] != player["nome"]
+    ]
+
+    if not teammates:
+        note = (
+            f"\n\n[CONTESTO AUTOMATICO] {player['nome']} ({squadra}, {ruolo}) "
+            f"non ha compagni di squadra dello stesso ruolo nel listone."
+        )
+    else:
+        lines = "\n".join(
+            f"- {t['nome']} ({squadra}, {ruolo}, Q:{t['quotazione']}, FVM:{t['fvm']})"
+            for t in sorted(teammates, key=lambda x: -x["fvm"])
+        )
+        note = (
+            f"\n\n[CONTESTO AUTOMATICO] Stai cercando le riserve di {player['nome']} "
+            f"({squadra}, {ruolo}, Q:{player['quotazione']}, FVM:{player['fvm']}).\n"
+            f"Giocatori dello stesso ruolo e squadra nel listone:\n{lines}\n"
+            f"Consiglia tra questi."
+        )
+
+    return note, [ruolo]
 
 def detect_roles(text: str) -> list[str]:
     t = text.lower()
@@ -229,10 +302,15 @@ def main():
                 print("  → Nessun nome valido trovato. Correggi il nome e riprova.\n")
                 continue
 
+        # ── Espandi query relazionali (panchinaro/secondo/riserva di X) ──
+        rel_note, rel_roles = expand_relational_query(user_input, index, data)
+        if rel_note:
+            print(f"  [relazione rilevata → compagni di ruolo iniettati]")
+
         # Rileva i ruoli rilevanti per questa domanda
         # Considera anche il testo delle ultime domande per il contesto
         recent_text = user_input + " ".join(m["content"] for m in history[-4:])
-        roles = detect_roles(recent_text)
+        roles = rel_roles if rel_roles else detect_roles(recent_text)
         context = build_context(roles, data)
 
         role_labels = {"P":"portieri","D":"difensori","C":"centrocampisti","A":"attaccanti"}
@@ -240,10 +318,11 @@ def main():
         print(f"  [contesto: {loaded}]")
 
         # Costruisce i messaggi: system con dati freschi + storia + domanda attuale
+        user_msg = user_input + rel_note  # rel_note è "" se non c'è relazione
         messages = [
             {"role": "system", "content": BASE_SYSTEM + "\n\n" + context}
         ] + history + [
-            {"role": "user", "content": user_input}
+            {"role": "user", "content": user_msg}
         ]
 
         print("AI: ", end="", flush=True)
