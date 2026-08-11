@@ -372,7 +372,7 @@ def run_quick_pick(pick: dict, data: dict, index: dict, history: list) -> list[d
             + [{"role": "user", "content": pick["prompt"]}]
         )
         print("AI: ", end="", flush=True)
-        reply = ollama_chat(messages)
+        reply = ollama_chat(messages, num_predict=150)
         print(reply + "\n")
         new_history += [
             {"role": "user",      "content": pick["prompt"]},
@@ -392,7 +392,7 @@ def run_quick_pick(pick: dict, data: dict, index: dict, history: list) -> list[d
                 {"role": "user",   "content": prompt_r},
             ]
             print("AI: ", end="", flush=True)
-            reply = ollama_chat(messages)
+            reply = ollama_chat(messages, num_predict=250)
             print(reply + "\n")
             new_history += [
                 {"role": "user",      "content": prompt_r},
@@ -443,7 +443,7 @@ def restart_ollama() -> bool:
         return False
 
 
-def ollama_chat(messages: list, retry: bool = True) -> str:
+def ollama_chat(messages: list, retry: bool = True, num_predict: int = 512) -> str:
     num_ctx = estimate_num_ctx(
         messages[0]["content"] if messages else "",
         messages[1:],
@@ -452,7 +452,7 @@ def ollama_chat(messages: list, retry: bool = True) -> str:
         "model":   MODEL,
         "messages": messages,
         "stream":  False,
-        "options": {"temperature": 0.1, "num_ctx": num_ctx},
+        "options": {"temperature": 0.1, "num_ctx": num_ctx, "num_predict": num_predict},
     }).encode()
 
     req = urllib.request.Request(
