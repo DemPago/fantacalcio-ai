@@ -1,0 +1,20 @@
+{
+  "stagione": "2026-27",
+  "modalita": "Classic",
+  "giornate_giocate": 0,
+  "punti_totali": 0.0,
+  "punti_medi": 0.0,
+  "classifica_posizione": null,
+  "classifica_totale_squadre": null,
+  "record": {
+    "punteggio_massimo": null,
+    "punteggio_massimo_giornata": null,
+    "punteggio_minimo": null,
+    "punteggio_minimo_giornata": null
+  },
+  "bilancio": { "vittorie": 0, "pareggi": 0, "sconfitte": 0 },
+  "log_giornate": [],
+  "top_performers_stagione": [],
+  "flop_performers_stagione": [],
+  "note": ""
+}
