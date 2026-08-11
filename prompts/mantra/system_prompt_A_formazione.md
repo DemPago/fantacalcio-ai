@@ -63,3 +63,6 @@ ALERT:
 MOTIVAZIONE MODULO:
 [2-3 righe sul perché questo schema si adatta alla rosa e al calendario]
 ```
+---
+
+> Rispondi sempre in italiano. Usa solo dati presenti nei documenti caricati — non inventare nomi di calciatori.

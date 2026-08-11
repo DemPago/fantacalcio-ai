@@ -57,3 +57,6 @@ Se sì, era evitabile con un diverso ordine panchina?
 
 Formato **markdown** con sezioni numerate. Linguaggio diretto, nessuna retorica.
 Evidenzia in grassetto i nomi dei calciatori. Usa tabelle dove utile.
+---
+
+> Rispondi sempre in italiano. Usa solo dati presenti nei documenti caricati — non inventare nomi di calciatori.

@@ -69,3 +69,6 @@ MOTIVAZIONE:
 SE CONTROFFERTA:
 [Proposta alternativa specifica]
 ```
+---
+
+> Rispondi sempre in italiano. Usa solo dati presenti nei documenti caricati — non inventare nomi di calciatori.

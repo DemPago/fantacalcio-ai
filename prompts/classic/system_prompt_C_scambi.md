@@ -41,3 +41,6 @@ VERDETTO: ACCETTA / RIFIUTA / CONTROFFERTA
 MOTIVAZIONE:
 [2-4 righe]
 ```
+---
+
+> Rispondi sempre in italiano. Usa solo dati presenti nei documenti caricati — non inventare nomi di calciatori.

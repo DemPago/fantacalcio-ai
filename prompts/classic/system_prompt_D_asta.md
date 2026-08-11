@@ -109,3 +109,6 @@ LOW COST CONSIGLIATI (<20cr):
 ALERT E RISCHI:
 ...
 ```
+---
+
+> Rispondi sempre in italiano. Usa solo dati presenti nei documenti caricati — non inventare nomi di calciatori.
