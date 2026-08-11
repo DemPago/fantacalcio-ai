@@ -16,7 +16,7 @@ import time
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RUOLI_DIR = os.path.join(BASE, "knowledge_base", "listoni", "per_ruolo_classic")
 OLLAMA_URL = "http://localhost:11434/api/chat"
-MODEL = "qwen2.5:14b"
+MODEL = "qwen2.5:7b"
 
 # ── Carica i file per ruolo ───────────────────────────────────────────────────
 
