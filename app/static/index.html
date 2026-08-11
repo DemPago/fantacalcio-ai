@@ -172,6 +172,37 @@
     background: #1a1d2e;
   }
   .add-form h4 { font-size: 11px; color: #64748b; font-weight: 700; letter-spacing: 0.05em; margin-bottom: 10px; }
+  .autocomplete-wrap { position: relative; margin-bottom: 6px; }
+  .autocomplete-wrap input { width: 100%; margin-bottom: 0; }
+  .autocomplete-list {
+    position: absolute;
+    bottom: 100%;
+    left: 0; right: 0;
+    background: #1a1d2e;
+    border: 1px solid #3b82f6;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .autocomplete-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .autocomplete-item:hover { background: #2d3148; }
+  .autocomplete-item .ac-name { color: #f8fafc; font-weight: 600; }
+  .autocomplete-item .ac-meta { color: #64748b; font-size: 11px; }
+  .autocomplete-item .ac-role {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
   .add-form input, .add-form select {
     width: 100%;
     background: #0f1117;
@@ -379,21 +410,25 @@
 
     <div class="add-form">
       <h4>AGGIUNGI GIOCATORE</h4>
-      <input type="text" id="add-nome" placeholder="Nome (es. Maignan)">
-      <input type="text" id="add-squadra" placeholder="Squadra (es. Milan)">
+      <div class="autocomplete-wrap">
+        <input type="text" id="add-search" placeholder="Cerca per nome..." autocomplete="off"
+          oninput="searchPlayer(this.value)" onkeydown="acKeydown(event)">
+        <div class="autocomplete-list" id="ac-list" style="display:none"></div>
+      </div>
+      <div id="add-preview" style="display:none;background:#0f1117;border:1px solid #34d399;border-radius:8px;padding:10px;margin-bottom:8px;font-size:13px;">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div>
+            <span id="prev-nome" style="font-weight:700;color:#f8fafc"></span>
+            <span id="prev-squadra" style="color:#64748b;margin-left:6px"></span>
+          </div>
+          <span id="prev-badge" style="font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px"></span>
+        </div>
+        <div style="color:#64748b;font-size:11px;margin-top:4px">Quota: <span id="prev-quota" style="color:#f59e0b;font-weight:600"></span> cr &nbsp;·&nbsp; FVM: <span id="prev-fvm"></span></div>
+      </div>
       <div class="row">
-        <select id="add-ruolo" style="flex:1">
-          <option value="P">P — Portiere</option>
-          <option value="D">D — Difensore</option>
-          <option value="C">C — Centrocampista</option>
-          <option value="A">A — Attaccante</option>
-        </select>
+        <input type="number" id="add-prezzo" placeholder="Prezzo pagato (cr)" min="1" style="flex:1">
+        <button class="btn-add" style="flex:0 0 auto;width:auto;padding:0 14px;margin-top:0" onclick="addPlayer()">+</button>
       </div>
-      <div class="row" style="margin-top:6px">
-        <input type="number" id="add-quota" placeholder="Quota" min="1" style="flex:1">
-        <input type="number" id="add-prezzo" placeholder="Pagato cr" min="1" style="flex:1">
-      </div>
-      <button class="btn-add" onclick="addPlayer()">+ Aggiungi</button>
     </div>
   </div>
 
@@ -430,28 +465,94 @@ const ROLE_COLORS = { P: '#f59e0b', D: '#34d399', C: '#60a5fa', A: '#f87171' };
 let rosa = { budget: BUDGET, speso: 0, slot: SLOT_MAX, giocatori: [] };
 let history = [];
 let sending = false;
+let selectedPlayer = null;
+let acIndex = -1;
+let acResults = [];
+
+// ── Autocomplete ──────────────────────────────────────────────────────────────
+async function searchPlayer(q) {
+  selectedPlayer = null;
+  document.getElementById('add-preview').style.display = 'none';
+  const list = document.getElementById('ac-list');
+  if (q.length < 2) { list.style.display = 'none'; return; }
+
+  const res = await fetch('/players?q=' + encodeURIComponent(q));
+  acResults = await res.json();
+  acIndex = -1;
+
+  if (!acResults.length) { list.style.display = 'none'; return; }
+
+  list.innerHTML = acResults.map((p, i) => `
+    <div class="autocomplete-item" onclick="selectPlayer(${i})">
+      <div>
+        <span class="ac-name">${p.nome}</span>
+        <span class="ac-meta"> — ${p.squadra}</span>
+      </div>
+      <div style="display:flex;gap:6px;align-items:center">
+        <span style="color:#64748b;font-size:11px">Q:${p.quotazione}</span>
+        <span class="ac-role" style="background:${ROLE_COLORS[p.ruolo]}22;color:${ROLE_COLORS[p.ruolo]}">${p.ruolo}</span>
+      </div>
+    </div>`).join('');
+  list.style.display = 'block';
+}
+
+function selectPlayer(idx) {
+  selectedPlayer = acResults[idx];
+  document.getElementById('ac-list').style.display = 'none';
+  document.getElementById('add-search').value = selectedPlayer.nome;
+
+  const prev = document.getElementById('add-preview');
+  document.getElementById('prev-nome').textContent = selectedPlayer.nome;
+  document.getElementById('prev-squadra').textContent = selectedPlayer.squadra;
+  document.getElementById('prev-quota').textContent = selectedPlayer.quotazione;
+  document.getElementById('prev-fvm').textContent = selectedPlayer.fvm;
+  const badge = document.getElementById('prev-badge');
+  badge.textContent = selectedPlayer.ruolo;
+  badge.style.background = ROLE_COLORS[selectedPlayer.ruolo] + '22';
+  badge.style.color = ROLE_COLORS[selectedPlayer.ruolo];
+  prev.style.display = 'block';
+
+  document.getElementById('add-prezzo').focus();
+}
+
+function acKeydown(e) {
+  const list = document.getElementById('ac-list');
+  const items = list.querySelectorAll('.autocomplete-item');
+  if (e.key === 'ArrowDown') { acIndex = Math.min(acIndex+1, items.length-1); highlightAc(items); e.preventDefault(); }
+  else if (e.key === 'ArrowUp') { acIndex = Math.max(acIndex-1, 0); highlightAc(items); e.preventDefault(); }
+  else if (e.key === 'Enter' && acIndex >= 0) { selectPlayer(acIndex); e.preventDefault(); }
+  else if (e.key === 'Escape') { list.style.display = 'none'; }
+}
+
+function highlightAc(items) {
+  items.forEach((el,i) => el.style.background = i === acIndex ? '#2d3148' : '');
+}
+
+// Chiudi autocomplete cliccando fuori
+document.addEventListener('click', e => {
+  if (!e.target.closest('.autocomplete-wrap')) {
+    document.getElementById('ac-list').style.display = 'none';
+  }
+});
 
 // ── Rosa ─────────────────────────────────────────────────────────────────────
 function addPlayer() {
-  const nome = document.getElementById('add-nome').value.trim();
-  const squadra = document.getElementById('add-squadra').value.trim();
-  const ruolo = document.getElementById('add-ruolo').value;
-  const quota = parseInt(document.getElementById('add-quota').value) || 0;
+  if (!selectedPlayer) return alert('Seleziona un giocatore dalla lista.');
   const prezzo = parseInt(document.getElementById('add-prezzo').value) || 1;
-
-  if (!nome || !squadra) return alert('Inserisci nome e squadra.');
+  const { nome, squadra, ruolo, quotazione } = selectedPlayer;
 
   const count = rosa.giocatori.filter(g => g.ruolo === ruolo).length;
   if (count >= SLOT_MAX[ruolo]) return alert(`Slot ${ruolo} pieni (max ${SLOT_MAX[ruolo]}).`);
   if (prezzo > rosa.budget - rosa.speso) return alert('Budget insufficiente.');
 
-  rosa.giocatori.push({ nome, squadra, ruolo, quotazione: quota, prezzo_pagato: prezzo });
+  rosa.giocatori.push({ nome, squadra, ruolo, quotazione, prezzo_pagato: prezzo });
   rosa.speso += prezzo;
 
-  document.getElementById('add-nome').value = '';
-  document.getElementById('add-squadra').value = '';
-  document.getElementById('add-quota').value = '';
+  // Reset form
+  selectedPlayer = null;
+  document.getElementById('add-search').value = '';
   document.getElementById('add-prezzo').value = '';
+  document.getElementById('add-preview').style.display = 'none';
 
   renderRosa();
 }

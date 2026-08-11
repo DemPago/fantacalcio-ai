@@ -31,6 +31,35 @@ def load_knowledge() -> str:
 
 KNOWLEDGE = load_knowledge()
 
+def load_players() -> list[dict]:
+    """Legge i file MD e restituisce lista strutturata di giocatori."""
+    import re
+    players = []
+    files = {
+        "P": "classic_ruolo_P.md",
+        "D": "classic_ruolo_D.md",
+        "C": "classic_ruolo_C.md",
+        "A": "classic_ruolo_A.md",
+    }
+    # Formato: "Nome gioca nel Squadra, ruolo Ruolo, quotazione X crediti, FVM Y."
+    pattern = re.compile(r'^(.+?) gioca nel (.+?), ruolo .+?, quotazione (\d+) crediti, FVM (\d+)\.')
+    for ruolo, fname in files.items():
+        path = os.path.join(RUOLI_DIR, fname)
+        with open(path) as f:
+            for line in f:
+                m = pattern.match(line.strip())
+                if m:
+                    players.append({
+                        "nome": m.group(1),
+                        "squadra": m.group(2),
+                        "ruolo": ruolo,
+                        "quotazione": int(m.group(3)),
+                        "fvm": int(m.group(4)),
+                    })
+    return players
+
+PLAYERS = load_players()
+
 SYSTEM_PROMPT = f"""Sei un assistente esperto di Fantacalcio Classic italiano, stagione 2026-27.
 
 REGOLA ASSOLUTA:
@@ -69,6 +98,15 @@ class RosaPlayer(BaseModel):
     prezzo_pagato: int
 
 # ── Endpoints ────────────────────────────────────────────────────────────────
+
+@app.get("/players")
+def get_players(q: str = ""):
+    """Ricerca giocatori per nome (autocomplete)."""
+    if not q or len(q) < 2:
+        return []
+    q_lower = q.lower()
+    results = [p for p in PLAYERS if q_lower in p["nome"].lower()]
+    return results[:10]
 
 @app.post("/chat")
 async def chat(req: ChatRequest):
