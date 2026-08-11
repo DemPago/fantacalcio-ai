@@ -372,6 +372,7 @@ def run_quick_pick(pick: dict, data: dict, index: dict, history: list) -> list[d
             [{"role": "system", "content": BASE_SYSTEM + "\n\n" + context}]
             + [{"role": "user", "content": pick["prompt"]}]
         )
+        print("  [elaborazione in corso, mistral:7b su CPU ~60-90s...]")
         print("AI: ", end="", flush=True)
         reply = ollama_chat(messages, num_predict=150)
         print(reply + "\n")
@@ -617,6 +618,7 @@ def main():
         status = ollama_status()
         if status != "attivo":
             print(f"  [Ollama: {status}]")
+        print("  [elaborazione in corso, mistral:7b su CPU ~60-90s...]")
         print("AI: ", end="", flush=True)
         reply = ollama_chat(messages)
         print(reply + "\n")
