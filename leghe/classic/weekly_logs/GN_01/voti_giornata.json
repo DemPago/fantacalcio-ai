@@ -1,0 +1,36 @@
+{
+  "giornata": 1,
+  "modalita": "Classic",
+  "punteggio_finale": 0,
+  "punteggio_avversario": 0,
+  "risultato": null,
+  "_risultato_valori": "W | D | L",
+  "voti": [
+    {
+      "id": "p_01",
+      "nome": "NOME COGNOME",
+      "ruolo_classic": "P",
+      "ha_giocato": true,
+      "voto_base": 6.0,
+      "bonus": {
+        "porta_inviolata": 0,
+        "gol_segnati": 0,
+        "assist": 0,
+        "rigori_parati": 0
+      },
+      "malus": {
+        "gol_subiti": 0,
+        "ammonizione": 0,
+        "espulsione": 0,
+        "rigori_sbagliati": 0,
+        "autogol": 0
+      },
+      "fantavoto": 6.0,
+      "sv": false,
+      "sostituito_al_minuto": null,
+      "entrato_dalla_panchina": false,
+      "note": ""
+    }
+  ],
+  "_istruzione": "Replica il blocco per ogni calciatore. In Classic non esiste il malus fuori_posizione."
+}
