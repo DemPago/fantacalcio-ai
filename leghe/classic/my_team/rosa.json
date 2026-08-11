@@ -1,0 +1,111 @@
+{
+  "_istruzioni": "Popola questo file dopo l'asta. In Classic i ruoli sono solo P/D/C/A. Nessun ruolo polivalente.",
+  "stagione": "2026-27",
+  "lega": {
+    "nome": "NOME_LEGA_CLASSIC",
+    "modalita": "Classic",
+    "budget_iniziale": 500,
+    "crediti_spesi": 0,
+    "crediti_residui": 500
+  },
+  "rosa": [
+    {
+      "id": "p_01",
+      "nome": "NOME COGNOME",
+      "ruolo_classic": "P",
+      "_ruolo_classic_valori": "P | D | C | A",
+      "squadra_reale": "SQUADRA",
+      "prezzo_asta": 0,
+      "slot": 1,
+      "stato": {
+        "disponibile": true,
+        "infortunato": false,
+        "squalificato": false,
+        "diffidato": false,
+        "in_dubbio": false,
+        "note": ""
+      },
+      "stats_stagione": {
+        "presenze": 0,
+        "fantamedia": null,
+        "media_voto": null,
+        "partite_schierato_da_me": 0,
+        "gol_segnati": 0,
+        "assist": 0,
+        "gol_subiti": 0,
+        "rigori_parati": 0,
+        "rigori_sbagliati": 0,
+        "autogol": 0,
+        "ammonizioni": 0,
+        "espulsioni": 0,
+        "sv_count": 0,
+        "_aggiornato_alla_giornata": 0
+      }
+    },
+    {
+      "id": "p_02",
+      "nome": "NOME COGNOME",
+      "ruolo_classic": "P",
+      "squadra_reale": "SQUADRA",
+      "prezzo_asta": 0,
+      "slot": 2,
+      "stato": {
+        "disponibile": true,
+        "infortunato": false,
+        "squalificato": false,
+        "diffidato": false,
+        "in_dubbio": false,
+        "note": ""
+      },
+      "stats_stagione": {
+        "presenze": 0,
+        "fantamedia": null,
+        "media_voto": null,
+        "partite_schierato_da_me": 0,
+        "gol_segnati": 0,
+        "assist": 0,
+        "gol_subiti": 0,
+        "rigori_parati": 0,
+        "rigori_sbagliati": 0,
+        "autogol": 0,
+        "ammonizioni": 0,
+        "espulsioni": 0,
+        "sv_count": 0,
+        "_aggiornato_alla_giornata": 0
+      }
+    },
+    {
+      "id": "d_01",
+      "nome": "NOME COGNOME",
+      "ruolo_classic": "D",
+      "squadra_reale": "SQUADRA",
+      "prezzo_asta": 0,
+      "slot": 3,
+      "stato": {
+        "disponibile": true,
+        "infortunato": false,
+        "squalificato": false,
+        "diffidato": false,
+        "in_dubbio": false,
+        "note": ""
+      },
+      "stats_stagione": {
+        "presenze": 0,
+        "fantamedia": null,
+        "media_voto": null,
+        "partite_schierato_da_me": 0,
+        "gol_segnati": 0,
+        "assist": 0,
+        "gol_subiti": 0,
+        "rigori_parati": 0,
+        "rigori_sbagliati": 0,
+        "autogol": 0,
+        "ammonizioni": 0,
+        "espulsioni": 0,
+        "sv_count": 0,
+        "_aggiornato_alla_giornata": 0
+      }
+    }
+  ],
+  "_istruzione_completamento": "Replica il blocco per tutti i 25 giocatori. Composizione minima Classic: 3 P, 8 D, 8 C, 6 A (valori indicativi, dipende dal regolamento di lega)."
+}
